@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap" rel="stylesheet">
+    
+<!-- Libreria Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>El Palacio de Cristal</title>
+</head>
+<body>
+    <nav> 
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <!-- label class="logo"> Logo </label> -->     
+        <ul>
+            <li><a href="./index.html">Inicio</a> </li>
+            <li><a href="./Nosotros/acercade.html">Acerca de</a></li>
+            <li><a href="./Soporte/contacto.html">Contacto</a></li>
+            <li><a href="./galeria/nuestrasInstalaciones.html">Galeria</a></li>
+        </ul>
+    </nav>
+    
+
+    <!--aqui empieza el carrusel-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        
+        <!-- son las flechas de izq y der-->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+        
+                <!-- primera imagen del carrusel -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/carrucel.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Carrusel</h5>
+                      <p>Diversión que enamorará a los más peques.</p>
+                    </div>
+                  </div>
+        
+                  <!-- segunda imagen del carrusel-->
+                  <div class="carousel-item">
+                    <img src="./img/mesaPastel.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Para compartir el Pastel</h5>
+                      <p>Los sabores que todos esperan.</p>
+                    </div>
+                  </div>
+        
+                  <!-- tercera imagen del carrusel-->
+                  <div class="carousel-item">
+                    <img src="./img/mesaRegalos.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Un lugar para todos los regalos</h5>
+                      <p>Emociones que perduran.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden"></span>
+                </button>
+              </div>
+    <!--Aqui termina el carrusel-->
+    
+    
+    <!-- borrar desde aqui-->
+    <!--section class="hero">
+        <div class="texto__inicio">
+            <h1>El Palacio de Cristal: Salón de Fiestas</h1>
+            <h2>Bienvenidos</h2>
+            <h3>a mi página web</h3>
+
+        </div>
+    </section-->
+    <!--Borrar hasta aqui-->
+    <div class="contenedor">
+        <div class="contenido__principal">
+            <img src="./img/mesas3.jpg" alt="">
+            <div class="texto__caja">
+                <h3>Título contenedor principal</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    La empresa en sí es una empresa muy exitosa. 
+
+                    Quod earum deserunt est, exercitationem unde repudiandae 
+                    Lo que abandonan es la práctica de rechazarlo.
+
+                    odio numquam optio odit, provident reiciendis sit autem, 
+                    El odio nunca odia una opción, se encargan de que sea rechazada.
+
+                    itaque eveniet ex illum voluptatibus aperiam aut!
+                    ¡Así sucederá que lo abriré a los placeres!
+                </p>
+            </div>
+        </div>
+    </div>
+
+<!--contenedor para las tarjetas-->
+    <div class="contenedor__tarjetas">
+
+<!--Tarjeta 1-->
+        <div class="tarjeta">
+            <img src="./img/mesas.jpeg" alt="">
+            <div class="contenido__tarjeta">
+                <h1>Cumpleaños</h1>
+                <p>texto del contenido de la tarjeta
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim quisquam unde, tempore magnam fugiat numquam similique vel minus et architecto! Aspernatur porro natus autem ab fugiat perspiciatis itaque voluptas.
+                </p>
+    <!--Botones-->
+                <a href="#" class="boton__tarjeta">ver más</a>
+            </div>
+        </div>
+<!--Tarjeta 2-->
+<div class="tarjeta">
+    <img src="./img/mesas2.jpg" alt="">
+    <div class="contenido__tarjeta">
+        <h1>Bautizos</h1>
+        <p>texto del contenido de la tarjeta
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim quisquam unde, tempore magnam fugiat numquam similique vel minus et architecto! Aspernatur porro natus autem ab fugiat perspiciatis itaque voluptas.
+        </p>
+<!--Botones-->
+        <a href="#" class="boton__tarjeta">ver más</a>
+    </div>
+</div>
+<!--Tarjeta 3-->
+<div class="tarjeta">
+    <img src="./img/mesas.jpg" alt="">
+    <div class="contenido__tarjeta">
+        <h1>Graduaciones</h1>
+        <p>texto del contenido de la tarjeta
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim quisquam unde, tempore magnam fugiat numquam similique vel minus et architecto! Aspernatur porro natus autem ab fugiat perspiciatis itaque voluptas.
+        </p>
+<!--Botones-->
+        <a href="#" class="boton__tarjeta">ver más</a>
+    </div>
+</div>
+    </div>
+
+    
+
+
+    <section class="flex__container">
+        <div class="box__01">
+            Acerca de nosotros
+        </div>
+        <div class="box__02">
+            Caja 02
+        </div>
+        <div class="box__03">
+            Caja 03
+        </div>
+        <div class="box__04">
+            Caja 04
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="contenido__footer">
+                <a href="#"><i></i></a>
+                <a href="https://www.facebook.com/fiestasdgo"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>    
+            </div>
+
+            <div class="contenido__footer">
+                <ul>
+                    <li><a href="./acercade.html">Acerca de</a></li>
+                    <li><a href="#">Facturación</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Nuestras Instalaciones</a></li>
+                </ul>
+            </div>
+            <div class="contenido__footer">
+                El Palacio de Cristal © 2024 Todos los derechos reservados
+            </div>
+        </div>
+
+    </footer>
+<!--Libreria Bootrstrat JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

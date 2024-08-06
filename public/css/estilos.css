@@ -1,0 +1,1137 @@
+@import url("../public/fonts/cursivas/Playwrite_NG_Modern/PlaywriteNGModern-VariableFont_wght.ttf");
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');        
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+/*Montserrat*/
+/*Bona Nova SC para títulos y encabezados
+  Montserrat para bloques de textos y para menús
+  Regular para bloques de textos y 
+  la médium o bold 700 para menús y barras
+*/
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.montserrat-regular-italic {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.montserrat-medium {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.montserrat-medium-italic {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+.montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.montserrat-bold-italic {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+}
+:root{
+    /****
+
+    /*Colores:*/
+        /*primarios y secundarios: Define los colores principales que utilizarás en tu diseño, 
+            como el color de la marca, el color de fondo principal, etc.*/
+            /*Colores primarios:*/
+            --color__marca: #D50DD9!important;/* (rosa intenso)*/
+            --color__boton_small: #BF0B3B!important;/* (rosa intenso) 
+                    /* (para botones pequeños)*/
+            --color__boton_medium: #238C2A!important;/* (verde oscuro) - Un color de la paleta que 
+                    contraste con el fondo principal, ideal para botones de acción 
+                    secundaria o confirmación.*/
+            --color__boton_large: #D50DD9!important;/* (rosa intenso) - Color primario de la marca 
+                    para destacar los botones más grandes.*/
+        /*Colores secundarios:*/
+            --color__nav:#230633!important;/* (azul oscuro)* #BF0B3B!important;/* (rojo oscuro)*/
+            --color__fondo1: #F2B90C!important;/* (naranja claro)
+        /*Colores de fondo:*/
+            --color__footer: #238C2A!important;/* (verde oscuro)*/
+            --color__fondo2: #F27405!important;/* (naranja intenso)*/
+            --color__fondo3: #230633!important;/* (azul oscuro)*/
+            --color__fondo4: #BF0B3B!important;/* (rojo oscuro) (alternativo para fondos)*/
+        /*Colores de Gradiente: #BF0B3B #D50DD9 #238C2A #F2B90C #F27405 #230633*/
+            /*Red (#BF0B3B):
+                Red to Transparent: #BF0B3B80 to transparent
+                Red to Light Orange: #BF0B3B80 to #F2B90C80
+                Red to Dark Blue: #BF0B3B80 to #23063380*/
+                --color__gradientTopRed:#BF0B3B80!important;
+                --color__gradientBottomRed_a:transparent!important;
+                --color__gradientBottomRed_b:#F2B90C80!important;
+                --color__gradientBottomRed_c:#23063380!important;
+            /*Pink (#D50DD9):
+                Pink to Transparent: #D50DD980 to transparent
+                Pink to Light Orange: #D50DD980 to #F2B90C80
+                Pink to Dark Blue: #D50DD980 to #23063380*/
+                --color__gradientTopPink:#D50DD980 !important;
+                --color__gradientBottomPink_a:transparent !important;
+                --color__gradientBottomPink_b:#F2B90C80 !important;
+                --color__gradientBottomPink_c:#23063380 !important;
+            /*Dark Green (#238C2A):
+                Dark Green to Transparent: #238C2A80 to transparent
+                Dark Green to Light Orange: #238C2A80 to #F2B90C80
+                Dark Green to Dark Blue: #238C2A80 to #23063380*/
+                --color__gradientTopDarkGreen:#238C2A80 !important;
+                --color__gradientBottomDarkGreen_a:transparent !important;
+                --color__gradientBottomDarkGreen_b:#F2B90C80 !important;
+                --color__gradientBottomDarkGreen_c:#23063380 !important;
+            /*Light Orange (#F2B90C):
+                Light Orange to Transparent: #F2B90C80 to transparent
+                Light Orange to Dark Orange: #F2B90C80 to #F2740580
+                Light Orange to Dark Blue: #F2B90C80 to #23063380*/
+                --color__gradientTopOrange:#F2B90C80 !important;
+                --color__gradientBottomOrange_a:transparent !important;
+                --color__gradientBottomOrange_b:#F2740580 !important;
+                --color__gradientBottomOrange_c:#23063380 !important;
+            /*Dark Orange (#F27405):
+                Dark Orange to Transparent: #F2740580 to transparent
+                Dark Orange to Dark Blue: #F2740580 to #23063380*/
+                --color__gradientTopDarkOrange:#F2740580 !important;
+                --color__gradientBottomDarkOrange_a:transparent !important;
+                --color__gradientBottomDarkOrange_b:#23063380 !important;
+            /*Dark Blue (#230633):
+                Dark Blue to Transparent: #23063380 to transparent*/
+                --color__gradientTopDarkBlue:#23063380 !important;
+                --color__gradientBottom:transparent !important;
+        /*Colores de contenedores:*/
+            --color__contenedorNivel1: #F2B90C!important;/* (naranja claro)*/
+            --color__contenedorNivel2: #238C2A!important;/* (verde oscuro)*/
+    /*Colores de texto: Define los colores para el texto principal, los títulos, los enlaces, 
+        etc.*/
+    /*Colores de texto:*/
+        /*Texto principal:*/ 
+            --color__textoParrafo: #333!important; /*(gris oscuro)*/
+            --color__textoparrafo2:#FFFFFF!important;
+        /*Títulos:*/
+            --color__titulo1: #D50DD9!important; /*(rosa intenso)*/
+            --color__titulo2: #BF0B3B!important; /*(rojo oscuro)*/
+            --color__titulo3: #F2B90C!important; /*(naranja claro)*/
+            --color__titulo4: #238C2A!important;/* (verde oscuro)*/
+            --color__titulo_default: #FFFFFF!important;
+        /*Enlaces:*/
+            --color__enlaces: #D50DD9!important; /*(rosa intenso) (sin subrayado)*/
+            --color__enlaces:hover: #BF0B3B!important; /*(rojo oscuro)*/
+        /*Nav y Footer:   headers y footers*/
+            --color__textoNav:#FFFFFF!important; /*(blanco)*/
+            --color__textoNav2:#F2B90C!important;/*(Naranja coral)*/
+            --color__textoFooter:#FFFFFF!important;/*(blanco)*/
+            --color__textoFooter2:#F2B90C!important;/*(Naranja coral)*/
+        /*Botones*/
+            --color__textoBoton_small: #FFFFFF!important;/*(blanco)
+                    alternativas: 
+                        #e0e0e0 (gris claro): Puede ser una opción si buscas un tono más 
+                            suave que el blanco puro.
+                        #f2f2f2 (gris muy claro): Similar al gris claro, pero aún más sutil.*/
+            --color__textoBoton_medium: FFFFFF!important;/*(blanco)
+                    alternativas: 
+                        #e0e0e0 (gris claro): Puede ser una opción si buscas un tono más 
+                            suave que el blanco puro.
+                        #f2f2f2 (gris muy claro): Similar al gris claro, pero aún más sutil.*/
+            --color__textoBoton_large: #D50DD9!important;
+
+    /*Colores de estado: Define colores para estados como hover, active, error, etc.*/
+    /*Colores de estado:*/
+        /*Hover:*/
+            --color__hover:#BF0B3B!important;/* (rojo oscuro)*/
+            --color__hover2: #F2B90C;/* (naranja claro)*/
+            --color__hover2:#238C2A!important;
+        /*Active:*/
+            --color__active: #D50DD9;/* (rosa intenso)*/
+            --color__active2: #F27405;/* (naranja intenso)*/
+        /*Error:*/
+            --color__error: #F27405;/* (naranja intenso)*/
+            --color__error2: #BF0B3B;/* (rojo oscuro)*/
+    /*Colores Base*/
+        --color__blanco: #FFFFFF!important;
+        --color__negro: #000000!important;
+
+        --tamanioResponsivo: 720px;
+        
+
+}
+
+body {
+    /*color:var(--color__textoParrafo);*/
+    color:var(--color__textoparrafo2);
+    background-color: var(--color__fondo1)
+}
+h1{
+    color: var(--color__blanco);
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+p{
+    color: var(--color__blanco);
+    font-family: "Gwendolyn", cursive;
+    font-weight: 50;
+    font-style: normal;
+    text-align:justify;
+    color:var(--color__secundario);
+    font-size: 24px;
+    
+}
+
+header {
+    height: 80px;
+    width: 100%; /* Asegura que el header ocupe todo el ancho de la ventana */
+    background: var(--color__nav);
+    padding: 0 10px;
+    /*    padding: 20px; */
+    color: var(--color__textoNav);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+  /*z-index: 99; */
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+
+#logo-img {
+    height: 80px; /* Ajusta el tamaño de la imagen según sea necesario */
+    cursor: pointer; /* Para indicar que la imagen es interactiva */
+}
+
+.menuNav {
+    margin-right: 50px;
+  }
+  
+  .menuNav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      float: right;
+      margin-right: 40px;
+  }
+  
+  .menuNav li {
+      /*margin-right: 20px;*/
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-style: italic;
+      display: inline-block;
+      line-height: 100px;  /*debe ser el mismo numero de pixeles que mide el nav en este caso 100px*/
+      margin: 0 7px;
+  }
+  
+  
+  .menuNav a {
+      text-decoration: none;
+      color: var(--color__textoNav2);
+      font-size: 17px;
+  }
+  
+  .menuNav a:hover{
+      background-color: var(--color__hover2);
+      transition: 5s;
+  }
+  a:hover{
+    background-color: var(--color__hover);
+    transition: 5s; 
+}
+  
+#check {
+    display: none;
+}
+
+.checkbtn {
+    display: none; /* Esconde el menú hamburguesa por defecto */
+    font-size: 30px;
+    color: var(--color__textoNav2);
+    float: right;
+    line-height: 100px;
+    margin-right: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    /*le estamos diciendo a nuestra pagina que a partir de 752 px ocurra esto */
+    .menuNav ul l a{
+        font-size: 12px;
+    }
+
+    .checkbtn{
+        display: block; /* Muestra el menú hamburguesa en pantallas pequeñas */
+    }
+    .menuNav ul{
+        position: fixed;
+        height: 100vh;
+        background-color: var(--color__footer);
+        width: 100%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    .menuNav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .menuNav ul li a{
+        font-size: 19px;
+    }
+    a:hover{
+        background: var(--color__principal);
+
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+#contenedor {
+    width: 90%; /* Se agrega la propiedad width: 90% */
+    max-width: 1050px;
+    min-height: 700px;
+    background: var(--color__contenedorNivel2);
+    margin: 100px auto; 
+    border-radius: 20px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+    position: relative; /* Asegura que z-index funcione */
+    z-index: 3; /* Valor más bajo para que esté debajo del menú */
+}
+.contenedor2 {
+    margin-top: 50px;
+    width: 90%; /* Se agrega la propiedad width: 90% */
+    max-width: 1050px;
+    min-height: 700px;
+    background: var(--color__contenedorNivel2);
+    color: var(--color__textoParrafo2);
+    /*margin: 100px auto; */
+    
+    position: relative; /* Asegura que z-index funcione */
+    /*z-index: 1; /* Valor más bajo para que esté debajo del menú */
+    margin-left: 60px;
+}
+.contenedor2 p{
+    margin-bottom: 50px;
+}
+.contenedor2 li{
+    font-size: 24px;
+    padding-left: 29px;
+    text-decoration: none;
+    margin-left: 200px; 
+}
+
+
+/*Aqui inicia carrusel*/
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    background-color:var(--color__fondo2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 5px; /* Añadir separación entre las imágenes */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    position: relative; /* Para posicionar el texto dentro del contenedor */
+    min-width: calc(33.33% - 10px); /* Restar el espacio del gap para cada item */
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .carousel-item img {
+    width: auto;
+    height: 200px; /* Altura fija reducida para todas las imágenes */
+    object-fit: cover; /* Recorta y ajusta la imagen */
+    border-radius: 10px;
+    transition: filter 0.5s ease-in-out; /* Transición suave para el filtro */
+  }
+  
+  .carousel-item:hover img {
+    filter: brightness(50%); /* Imagen se oscurece al pasar el cursor */
+  }
+  
+  .carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
+    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; /* Transición suave para el texto */
+  }
+  
+  .carousel-item:hover .carousel-text {
+    transform: translate(-50%, -50%) scale(1.1); /* Texto se agranda ligeramente */
+    color: #fff; /* Color del texto cambia al pasar el cursor */
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(1, 30, 63, 0.616);
+    color: white;
+    border: none;
+    width: 40px; /* Ancho y altura igual para hacer un círculo perfecto */
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Tamaño de la flecha */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transición suave para las flechas */
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+
+  .prev:hover, .next:hover {
+    transform: translateY(-50%) scale(1.2); /* Agrandar las flechas */
+    background-color:rgba(1, 30, 63, 0.918); /* Hacer las flechas más opacas */
+  }
+  /*Aqui termina Carrusel*/
+
+  /* sección de imágen Inicial y bienvenida */
+.portada{
+    background: linear-gradient(to bottom, #00a49c21,#03ff851d), url("../img/Genéricas/globosPortada.jpg");
+    background-size:cover;
+    height: 45vh;
+    width: 100%;
+    text-align:center;
+    border: 5px solid #1C6EA4;
+    border-radius: 25px 0px 25px 25px;
+    position: relative; /* Asegura que z-index funcione */
+    z-index: 3; /* Valor más bajo para que esté debajo del menú */
+}
+  /*Tarjetas*/
+.contenedor__tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;/*indica que cuando no se noten las tarjetas, estas tarjetas se van a posicionar en forma vertical*/
+    gap: 25px ;/*tiene que ver con el espacio entre tarjetas para que no se peguen*/
+    margin-top: 25px;
+    margin-block-end: 20px;
+    background-color: var(--color__contenedorNivel1);
+}
+
+.tarjeta{
+    width: 325px;    
+    background-color: var(--color__fondo4);
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgb(0,0,0, 0.3);
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.tarjeta:hover{
+    transform: translateY(-40px);
+    color: var(--color__textoParrafo);
+}
+.tarjeta img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    
+}
+
+.contenido__tarjeta {
+    padding: 20px;
+}
+
+.contenido__tarjeta h1{
+    font-size: 23px;
+    color: var(--color__titulo_default);
+}
+
+.contenido__tarjeta p{
+    font-size: 17px;
+    color: var(--color__textoparrafo2);
+}
+
+.boton__tarjeta{
+    display: inline-block; /*que se vea en forma de fila*/
+    background-color: var(--color__negro);
+    color: var(--color__blanco);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+.boton__tarjeta:hover{
+    color: var(--color__principal);
+    background-color: var(--color__blanco) ;
+    text-decoration: none;
+}
+/*Finaliza Tarjetas*/
+
+/*inicia mapa*/
+.mapa{
+    max-width: 720px;
+    margin: 0 auto;
+    /*width="600" height="450" style="border:0;"*/
+
+    }
+.mapa iframe{
+    width: 100%;
+    border: 5px solid var(--color__fondo4) !important;
+    margin: 0 auto;
+}
+.mapa h1{
+    /*font-family: "Playwrite NG Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;*/
+    font-family: "Playwrite ES Deco", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color:var(--color__error2);
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Padre ejercicio Flexbox*/
+.flex__container{
+    background-color: var(--color__error2);
+    border: 0px solid var(--color-borde-principal);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10px;
+    -webkit-box-shadow: 14px 10px 19px -14px black;
+    -moz-box-shadow: 14px 0px 19px -14px rgba(0,0,0);
+    box-shadow: 14px 10px 19px -14px rgba(0,0,0);
+    border-radius: 20px;
+    
+}
+
+
+
+/* hijos ejercicio Flexbox */
+.box__01{
+    background-color: var(--color-primario);
+    background: url("../public/img/cumple/markus-spiske-aAil4k3_BA8-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__02{
+    background-color: var(--color-primario);
+    background: url("../public/img/cumple/pastel.png") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__03{
+    background-color: var(--color-primario);
+    background: url("../public/img/cumple/shayna-douglas-9ou4URp__0s-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__04{
+    background-color: var(--color-primario);
+    background: url("../public/img/cumple/steven-libralon-Do1GQljlNk8-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__05{
+    background-color: var(--color-primario);
+    background: url("../public/img/BabyShower/insung-yoon-iioAHjNYA_o-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__06{
+    background-color: var(--color-primario);
+    background: url("../public/img/BabyShower/madhuri-mohite-kWJm2a6DbAw-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__07{
+    background-color: var(--color-primario);
+    background: url("../public/img/BabyShower/mediamodifier-fdPlZXc-ZwU-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__08{
+    background-color: var(--color-primario);
+    background: url("../public/img/BabyShower/tuva-mathilde-loland-7hhn4SmbnT8-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__09{
+    background-color: var(--color-primario);
+    background: url("../public/img/bautizos/bautizo.png") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__10{
+    background-color: var(--color-primario);
+    background: url("../public/img/bautizos/bautizo2.png") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__11{
+    background-color: var(--color-primario);
+    background: url("../public/img/bautizos/josh-applegate-mjn1LcoU1Cw-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__12{
+    background-color: var(--color-primario);
+    background: url("../public/img/bautizos/stelios-tsaousidis-E_Nnkjz8z1k-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__13{
+    background-color: var(--color-primario);
+    background: url("../public/img/graduaciones/albert-vincent-wu-m7yOJx0ALME-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__14{
+    background-color: var(--color-primario);
+    background: url("../public/img/graduaciones/leon-wu-LLfRMRT-9AY-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__15{
+    background-color: var(--color-primario);
+    background: url("../public/img/graduaciones/rut-miit-oTglG1D4hRA-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__16{
+    background-color: var(--color-primario);
+    background: url("../public/img/graduaciones/vasily-koloda-8CqDvPuo_kI-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__17{
+    background-color: var(--color-primario);
+    background: url("../public/img/14feb/volodymyr-tokar-iUXUi14vX_I-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__18{
+    background-color: var(--color-primario);
+    background: url("../public/img/14feb/luke-southern-_WASS1rGEcE-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__19{
+    background-color: var(--color-primario);
+    background: url("../public/img/14feb/gabriella-clare-marino-d4vz3nzMvjM-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__20{
+    background-color: var(--color-primario);
+    background: url("../public/img/14feb/rinck-content-studio-O8PjuNKatJ0-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__21{
+    background-color: var(--color-primario);
+    background: url("../public/img/10mayo/alex-pasarelu-S8BW-Wx9G8I-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__22{
+    background-color: var(--color-primario);
+    background: url("../public/img/10mayo/guille-pozzi-y1wVavuxZtE-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__23{
+    background-color: var(--color-primario);
+    background: url("../public/img/10mayo/kelly-sikkema-Z4GKcFAGck4-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__24{
+    background-color: var(--color-primario);
+    background: url("../public/img/10mayo/polina-kuzovkova-5XVw43ET01s-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__25{
+    background-color: var(--color-primario);
+    background: url("../public/img/halloween/david-menidrey-MYRG0ptGh50-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__26{
+    background-color: var(--color-primario);
+    background: url("../public/img/halloween/lukasz-niescioruk-xVG-TpHG2NY-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__27{
+    background-color: var(--color-primario);
+    background: url("../public/img/halloween/paige-cody-hiuBsBPPquE-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__28{
+    background-color: var(--color-primario);
+    background: url("../public/img/halloween/silvana-carlos-vXZT7N3JpgM-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__29{
+    background-color: var(--color-primario);
+    background: url("../public/img/Navidad/annie-spratt-VDXtVYJVj7A-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__30{
+    background-color: var(--color-primario);
+    background: url("../public/img/Navidad/annie-spratt-Z9Ds4w141i4-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__31{
+    background-color: var(--color-primario);
+    background: url("../public/img/Navidad/krakenimages-liT5AlTmC8I-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__32{
+    background-color: var(--color-primario);
+    background: url("../public/img/Navidad/s-b-vonlanthen-IPubTLY7Ji0-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Footer */
+.footer{
+    background: var(--color__nav);
+    padding: 30px 0px;
+    text-align: center;
+    color: var(--color__textoNav2);
+}
+.footer a{
+    font-size: 20px;
+    color: var(--color__textoNav2);
+    text-decoration: none;
+}
+.footer .contenido__footer{
+    width: 100%;
+    margin: 2% 0%;
+    text-decoration: none;
+}
+.contenido__footer h3{
+    font-family: "Playwrite NG Modern", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.footer .contenido__footer ul{
+    width: 100%;
+}
+
+.footer .contenido__footer li{
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.footer .contenido__footer a i{
+    font-size: 27px;
+    margin: 0 20px;
+    
+}
+
+@media (max-width:768px){
+    .contenedor2 {
+        width: 100%;
+        max-height: 300px;
+        margin: 3% auto;        
+    }
+    .contenedor2 h1{
+        font-size: 20px;
+    }
+    .contenedor2 p{
+        font-size: 16px;
+    }
+    .contenedor2 ul{
+        font-size: 16px;
+        margin-left: 2px;
+        margin-bottom: 30;
+    }
+    .contenedor2 li{
+        font-size: 16px;
+        margin-left: 30px;
+    }
+    .portada{
+        background: linear-gradient(to bottom, #00a49c21,#03ff851d), url("../public/img/Genéricas/globosPortada.jpg");
+        background-size:cover;
+        height: 45vh;
+        width: 100%;
+        text-align:center;
+        border: 5px solid #1C6EA4;
+        border-radius: 25px 0px 25px 25px;
+        position: relative; /* Asegura que z-index funcione */
+        z-index: 3; /* Valor más bajo para que esté debajo del menú */
+    }
+    .portada h1{
+        font-size: 15px;
+        
+    }
+    .mapa{
+        max-width: 320px;
+        margin: 0 auto;
+        /*width="600" height="450" style="border:0;"*/
+    
+        }
+    .mapa iframe{
+        width: 100%;
+        border: 5px solid var(--color__fondo4) !important;
+        margin: 0 auto;
+    }
+    .mapa h1{
+        font-size: 24px;
+    }
+
+    
+    .footer{
+        text-align: left;
+        padding: 15px;
+    }
+    .footer .contenido__footer{
+        width: 100%;
+        margin: 2% 0%;
+        text-decoration: none;
+    }
+    .footer .contenido__footer ul li{
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+    .footer .contenido__footer li{
+        display: inline-block;
+        margin: 0 5%;
+    }
+    
+}
+
+
+
+
+

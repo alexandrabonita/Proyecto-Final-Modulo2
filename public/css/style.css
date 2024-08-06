@@ -1,0 +1,506 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');*/
+@import url("../fonts/Roboto/Roboto-Italic.ttf");
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url("../fonts/Lora/Lora-VariableFont_wght.ttf");
+
+/* Caja de reseteo de estilo */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* variables para los colores*/ 
+:root{
+
+    --color__principal: #230633; /*Fondo del sitio*/
+    --color__secundario: #e0449f; /*headers y footers*/
+    --color__terciario: #ea691e; /*Contenedor de 1º Nível*/
+    --color__tetra: #cf2844; /*Contenedor de 2º Nível*/
+
+    --color__blanco: #FFFFFF;
+    --color__negro: #000000;
+
+    --color__titulo1: #FFFFFF; /*Títulos sobre fondo del sitio*/
+    --color__titulo2:#FFFFFF; /*Títulos sobre contenedores de 1º Nível*/
+    --color__titulo3:#FFFFFF; /*Títulos sobre contenedores de 2º Nível*/
+    --color__parrafo:#FFFFFF;
+}
+
+body{
+    background-color: var(--color__principal) !important;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1{
+    color: var(--color__blanco);
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color:var(--color__secundario);
+    font-size: 50px;
+}
+
+
+
+h2{
+    color: var(--color__blanco);
+    font-size: 32px;
+    /*position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    */
+    text-align: left;
+    z-index: -1;
+
+}
+
+h3{
+    color: var(--color__blanco);
+    font-size: 19px;
+    text-align: left;
+    z-index: -1;
+}
+
+/* Barra fija superior con las opciones */
+nav{
+    background: var(--color__secundario);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    
+}
+label.logo{
+    /*font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--color__blanco);
+    font-size: 25px;
+    */
+    line-height: 100px;
+    padding: 30px 30px; 
+    background: linear-gradient(to bottom, #00a49c21,#03ff851d);
+    background-size:cover;
+    height: 65vh;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    line-height: 100px;  /*debe ser el mismo numero de pixeles que mide el nav en este caso 100px*/
+    margin: 0 7px;
+
+}
+
+nav ul li a{
+    color: var(--color__blanco);
+    font-size: 17px;
+}
+
+a:hover{
+    background-color: var(--color__principal);
+    transition: 5s;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: var(--color__blanco);
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+#check{  
+    display: none;   
+}
+
+@media (max-width:752px){
+    /*le estamos diciendo a nuestra pagina que a partir de 752 px ocurra esto */
+    label.logo{
+        font-size: 15px;
+        padding-left: 50px;
+    }
+    nav ul l a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        height: 100vh;
+        background-color: var(--color__principal);
+        width: 100%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 19px;
+    }
+    a:hover{
+        background: var(--color__principal);
+
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+/*carrusel Bootstrap*/ 
+.carousel-inner img{
+    /*top: 100px;*/
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* sección de imágen Inicial y bienvenida */
+.hero{
+    background: linear-gradient(to bottom, #00a49c21,#03ff851d), url("../img/Palacio01.jpg");
+    /* url("https://scontent.fgdl12-1.fna.fbcdn.net/v/t39.30808-6/313410989_514636280679450_3537824727226301401_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFrLPYxrMqpZADSLfX5xocqMenptLfshm0x6em0t-yGbWT3g94CWxa4LWVzaBjqQ0is5e-komZ3-ClTKY8Rr0EI&_nc_ohc=ZCzuXgMCJ9oQ7kNvgELoUgF&_nc_ht=scontent.fgdl12-1.fna&oh=00_AYDJ7MRf9fXDr2iG1TAEVOB3PpO-YNOPq3oT6L5F-LKDbA&oe=667003F8");
+    */
+    
+    background-size:cover;
+    height: 65vh;
+    width: 100%;
+    text-align:center;
+    border: 5px solid #1C6EA4;
+    border-radius: 25px 0px 25px 25px;
+
+    
+}
+/*Contenido Principal*/
+.contenedor{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.contenido__principal{
+    width: 70%;
+    margin: 3% auto;
+}
+
+.texto__caja{
+       
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    color: var(--color__parrafo);
+    font-size: 19px;
+    justify-content:center;
+
+}
+.contenido__principal img{
+    max-width: 100%;
+    border-radius: 10px;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 20px;
+}
+@media (max-width:720) {
+    .contenido__principal img{
+        width: 100%;
+        max-height: 300px;
+        margin: 3% auto;
+    }
+}
+
+.texto__caja h3{
+    color: #FFFFFF;
+    font-size: 19px;
+}
+
+/*Tarjetas*/
+.contenedor__tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;/*indica que cuando no se noten las tarjetas, estas tarjetas se van a posicionar en forma vertical*/
+    gap: 25px ;/*tiene que ver con el espacio entre tarjetas para que no se peguen*/
+    margin-top: 25px;
+    margin-block-end: 20px;
+}
+
+.tarjeta{
+    width: 325px;    
+    background-color: var(--color__tetra);
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgb(0,0,0, 0.3);
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.tarjeta:hover{
+    transform: translateY(-40px);
+}
+.tarjeta img{
+    width: 100%;
+    height: 350px;
+    
+    object-fit: cover;
+    
+}
+
+.contenido__tarjeta {
+    padding: 20px;
+}
+
+.contenido__tarjeta h1{
+    font-size: 23px;
+    color: var(--color__titulo1);
+}
+
+.contenido__tarjeta p{
+    font-size: 17px;
+    color: var(--color__titulo1);
+}
+
+.boton__tarjeta{
+    display: inline-block; /*que se vea en forma de fila*/
+    background-color: var(--color__negro);
+    color: var(--color__titulo1);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    
+}
+.boton__tarjeta:hover{
+    color: var(--color__principal);
+    background-color: var(--color__blanco) ;
+    text-decoration: none;
+}
+
+
+/*Finaliza Tarjetas*/
+
+/* Padre ejercicio Flexbox*/
+.flex__container{
+    background-color: var(--color__tetra);
+    border: 0px solid var(--color-borde-principal);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10px;
+    -webkit-box-shadow: 14px 10px 19px -14px black;
+    -moz-box-shadow: 14px 0px 19px -14px rgba(0,0,0);
+    box-shadow: 14px 10px 19px -14px rgba(0,0,0);
+    border-radius: 20px;
+    
+}
+
+
+
+/* hijos ejercicio Flexbox */
+.box__01{
+    background-color: var(--color-primario);
+    background: linear-gradient(to bottom, #6b0604e8,#a3310b60), url("../img/mesaPastel.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.box__02{
+    background-color: var(--color-secundario);
+    background: url("../img/carrucel.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: #a40d0d;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+
+.box__03{
+    background-color: var(--color-primario);
+    background: url("../img/mesas2.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.box__04{
+    background-color: var(--color-secundario);
+    background: url("../img/patio.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+
+}
+/*inicia mapa*/
+.mapa{
+    max-width: 720px;
+    margin: 0 auto;
+    /*width="600" height="450" style="border:0;"*/
+
+    }
+.mapa iframe{
+    width: 100%;
+    border: 5px solid var(--color__secundario) !important;
+    margin: 0 auto;
+}
+.video{
+    max-width: 720px;
+    margin: 0 auto;
+    /*width="560" height="315"*/
+    }
+.video iframe{
+    width: 100%;
+    border: 5px solid var(--color__terciario) !important;
+    margin: 0 auto;
+}
+/*Termna mapa*/
+/* Footer */
+.footer{
+    background: var(--color__secundario);
+    padding: 30px 0px;
+    text-align: center;
+    color: var(--color__principal);
+}
+.footer a{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.footer .contenido__footer{
+    width: 100%;
+    margin: 2% 0%;
+    text-decoration: none;
+}
+
+.footer .contenido__footer ul{
+    width: 100%;
+}
+
+.footer .contenido__footer li{
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.footer .contenido__footer a i{
+    font-size: 27px;
+    margin: 0 20px;
+}
+
+@media (max-width:720px){
+    .footer{
+        text-align: left;
+        padding: 15px;
+    }
+    .footer .contenido__footer ul li{
+        display: block;
+        margin: 20px 0px;
+        text-align: left;
+    }
+    .footer .contenido__footer li{
+        display: inline-block;
+        margin: 0 5%;
+    }
+}
+
+/*Portada Fotos*/
+.flex__containerFotos{
+    border: 0px solid var(--color-borde-principal);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 99%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 110px;
+    border-radius: 20px;
+    padding-bottom: 1%;
+}
+.flex__containerFotos h1{
+    color: var(--color__principal);
+}
+.foto__01{
+    background-color: var(--color-primario);
+    background: url("../img/globosPortada.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 20px;
+}
+
+/*tarjeta de la pagina de acerca de*/
+.card {
+    margin: 5% auto;
+    max-width: 920px;
+}
+
+.card img{
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
+    
+}
+/*aquí termina tarjeta de la pagina de acerca de*/

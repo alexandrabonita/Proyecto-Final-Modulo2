@@ -1,0 +1,713 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');*/
+@import url("../fonts/Roboto/Roboto-Italic.ttf");
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url("../fonts/Lora/Lora-VariableFont_wght.ttf");
+
+/* Caja de reseteo de estilo */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* variables para los colores*/ 
+:root{
+    /****
+
+    /*Colores:*/
+        /*primarios y secundarios: Define los colores principales que utilizarás en tu diseño, 
+            como el color de la marca, el color de fondo principal, etc.*/
+            /*Colores primarios:*/
+            --color__marca: #D50DD9!important;/* (rosa intenso)*/
+            --color__boton_small: #BF0B3B!important;/* (rosa intenso) 
+                    /* (para botones pequeños)*/
+            --color__boton_medium: #238C2A!important;/* (verde oscuro) - Un color de la paleta que 
+                    contraste con el fondo principal, ideal para botones de acción 
+                    secundaria o confirmación.*/
+            --color__boton_large: #D50DD9!important;/* (rosa intenso) - Color primario de la marca 
+                    para destacar los botones más grandes.*/
+        /*Colores secundarios:*/
+            --color__nav:#230633!important;/* (azul oscuro)* #BF0B3B!important;/* (rojo oscuro)*/
+            --color__fondo1: #F2B90C!important;/* (naranja claro)
+        /*Colores de fondo:*/
+            --color__footer: #238C2A!important;/* (verde oscuro)*/
+            --color__fondo2: #F27405!important;/* (naranja intenso)*/
+            --color__fondo3: #230633!important;/* (azul oscuro)*/
+            --color__fondo4: #BF0B3B!important;/* (rojo oscuro) (alternativo para fondos)*/
+        /*Colores de Gradiente: #BF0B3B #D50DD9 #238C2A #F2B90C #F27405 #230633*/
+            /*Red (#BF0B3B):
+                Red to Transparent: #BF0B3B80 to transparent
+                Red to Light Orange: #BF0B3B80 to #F2B90C80
+                Red to Dark Blue: #BF0B3B80 to #23063380*/
+                --color__gradientTopRed:#BF0B3B80!important;
+                --color__gradientBottomRed_a:transparent!important;
+                --color__gradientBottomRed_b:#F2B90C80!important;
+                --color__gradientBottomRed_c:#23063380!important;
+            /*Pink (#D50DD9):
+                Pink to Transparent: #D50DD980 to transparent
+                Pink to Light Orange: #D50DD980 to #F2B90C80
+                Pink to Dark Blue: #D50DD980 to #23063380*/
+                --color__gradientTopPink:#D50DD980 !important;
+                --color__gradientBottomPink_a:transparent !important;
+                --color__gradientBottomPink_b:#F2B90C80 !important;
+                --color__gradientBottomPink_c:#23063380 !important;
+            /*Dark Green (#238C2A):
+                Dark Green to Transparent: #238C2A80 to transparent
+                Dark Green to Light Orange: #238C2A80 to #F2B90C80
+                Dark Green to Dark Blue: #238C2A80 to #23063380*/
+                --color__gradientTopDarkGreen:#238C2A80 !important;
+                --color__gradientBottomDarkGreen_a:transparent !important;
+                --color__gradientBottomDarkGreen_b:#F2B90C80 !important;
+                --color__gradientBottomDarkGreen_c:#23063380 !important;
+            /*Light Orange (#F2B90C):
+                Light Orange to Transparent: #F2B90C80 to transparent
+                Light Orange to Dark Orange: #F2B90C80 to #F2740580
+                Light Orange to Dark Blue: #F2B90C80 to #23063380*/
+                --color__gradientTopOrange:#F2B90C80 !important;
+                --color__gradientBottomOrange_a:transparent !important;
+                --color__gradientBottomOrange_b:#F2740580 !important;
+                --color__gradientBottomOrange_c:#23063380 !important;
+            /*Dark Orange (#F27405):
+                Dark Orange to Transparent: #F2740580 to transparent
+                Dark Orange to Dark Blue: #F2740580 to #23063380*/
+                --color__gradientTopDarkOrange:#F2740580 !important;
+                --color__gradientBottomDarkOrange_a:transparent !important;
+                --color__gradientBottomDarkOrange_b:#23063380 !important;
+            /*Dark Blue (#230633):
+                Dark Blue to Transparent: #23063380 to transparent*/
+                --color__gradientTopDarkBlue:#23063380 !important;
+                --color__gradientBottom:transparent !important;
+        /*Colores de contenedores:*/
+            --color__contenedorNivel1: #F2B90C!important;/* (naranja claro)*/
+            --color__contenedorNivel2: #238C2A!important;/* (verde oscuro)*/
+    /*Colores de texto: Define los colores para el texto principal, los títulos, los enlaces, 
+        etc.*/
+    /*Colores de texto:*/
+        /*Texto principal:*/ 
+            --color__textoParrafo: #333!important; /*(gris oscuro)*/
+            --color__textoparrafo2:#FFFFFF!important;
+        /*Títulos:*/
+            --color__titulo1: #D50DD9!important; /*(rosa intenso)*/
+            --color__titulo2: #BF0B3B!important; /*(rojo oscuro)*/
+            --color__titulo3: #F2B90C!important; /*(naranja claro)*/
+            --color__titulo_default: #FFFFFF!important;
+        /*Enlaces:*/
+            --color__enlaces: #D50DD9!important; /*(rosa intenso) (sin subrayado)*/
+            --color__enlaces:hover: #BF0B3B!important; /*(rojo oscuro)*/
+        /*Nav y Footer:   headers y footers*/
+            --color__textoNav:#FFFFFF!important; /*(blanco)*/
+            --color__textoNav2:#F2B90C!important;/*(Naranja coral)*/
+            --color__textoFooter:#FFFFFF!important;/*(blanco)*/
+            --color__textoFooter2:#F2B90C!important;/*(Naranja coral)*/
+        /*Botones*/
+            --color__textoBoton_small: #FFFFFF!important;/*(blanco)
+                    alternativas: 
+                        #e0e0e0 (gris claro): Puede ser una opción si buscas un tono más 
+                            suave que el blanco puro.
+                        #f2f2f2 (gris muy claro): Similar al gris claro, pero aún más sutil.*/
+            --color__textoBoton_medium: FFFFFF!important;/*(blanco)
+                    alternativas: 
+                        #e0e0e0 (gris claro): Puede ser una opción si buscas un tono más 
+                            suave que el blanco puro.
+                        #f2f2f2 (gris muy claro): Similar al gris claro, pero aún más sutil.*/
+            --color__textoBoton_large: #D50DD9!important;
+
+    /*Colores de estado: Define colores para estados como hover, active, error, etc.*/
+    /*Colores de estado:*/
+        /*Hover:*/
+            --color__hover:#BF0B3B!important;/* (rojo oscuro)*/
+            --color__hover2: #F2B90C;/* (naranja claro)*/
+            --color__hover2:#238C2A!important;
+        /*Active:*/
+            --color__active: #D50DD9;/* (rosa intenso)*/
+            --color__active2: #F27405;/* (naranja intenso)*/
+        /*Error:*/
+            --color__error: #F27405;/* (naranja intenso)*/
+            --color__error2: #BF0B3B;/* (rojo oscuro)*/
+    /*Colores Base*/
+        --color__blanco: #FFFFFF!important;
+        --color__negro: #000000!important;
+
+    ****/
+
+    --color__principal: #230633; /*Fondo del sitio*/
+    --color__secundario: #e0449f; /*headers y footers*/
+    --color__terciario: #ea691e; /*Contenedor de 1º Nível*/
+    --color__tetra: #cf2844; /*Contenedor de 2º Nível*/
+
+    --color__blanco: #FFFFFF;
+    --color__negro: #000000;
+
+    --color__titulo1: #FFFFFF; /*Títulos sobre fondo del sitio*/
+    --color__titulo2:#FFFFFF; /*Títulos sobre contenedores de 1º Nível*/
+    --color__titulo3:#FFFFFF; /*Títulos sobre contenedores de 2º Nível*/
+    --color__parrafo:#FFFFFF;
+}
+
+body{
+    background-color: var(--color__fondo1) !important;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1{
+    color: var(--color__blanco);
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color:var(--color__secundario);
+    font-size: 50px;
+}
+
+
+
+h2{
+    color: var(--color__blanco);
+    font-size: 32px;
+    /*position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    */
+    text-align: left;
+    z-index: -1;
+
+}
+
+h3{
+    color: var(--color__blanco);
+    font-size: 19px;
+    text-align: left;
+    z-index: -1;
+}
+
+/* Barra fija superior con las opciones */
+nav{
+    background: var(--color__nav);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    
+}
+label.logo{
+    /*font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--color__blanco);
+    font-size: 25px;
+    */
+    line-height: 100px;
+    padding: 30px 30px; 
+    background: linear-gradient(to bottom, #00a49c21,#03ff851d);
+    background-size:cover;
+    height: 65vh;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    line-height: 100px;  /*debe ser el mismo numero de pixeles que mide el nav en este caso 100px*/
+    margin: 0 7px;
+
+}
+
+nav ul li a{
+    color: var(--color__blanco);
+    font-size: 17px;
+}
+
+a:hover{
+    background-color: var(--color__principal);
+    transition: 5s;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: var(--color__blanco);
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+#check{  
+    display: none;   
+}
+
+@media (max-width:752px){
+    /*le estamos diciendo a nuestra pagina que a partir de 752 px ocurra esto */
+    label.logo{
+        font-size: 15px;
+        padding-left: 50px;
+    }
+    nav ul l a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        height: 100vh;
+        background-color: var(--color__principal);
+        width: 100%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 19px;
+    }
+    a:hover{
+        background: var(--color__principal);
+
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+/*carrusel Bootstrap*/ 
+.carousel-inner img{
+    /*top: 100px;*/
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* sección de imágen Inicial y bienvenida */
+.hero{
+    background: linear-gradient(to bottom, #00a49c21,#03ff851d), url("../img/Palacio01.jpg");
+    /* url("https://scontent.fgdl12-1.fna.fbcdn.net/v/t39.30808-6/313410989_514636280679450_3537824727226301401_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFrLPYxrMqpZADSLfX5xocqMenptLfshm0x6em0t-yGbWT3g94CWxa4LWVzaBjqQ0is5e-komZ3-ClTKY8Rr0EI&_nc_ohc=ZCzuXgMCJ9oQ7kNvgELoUgF&_nc_ht=scontent.fgdl12-1.fna&oh=00_AYDJ7MRf9fXDr2iG1TAEVOB3PpO-YNOPq3oT6L5F-LKDbA&oe=667003F8");
+    */
+    
+    background-size:cover;
+    height: 65vh;
+    width: 100%;
+    text-align:center;
+    border: 5px solid #1C6EA4;
+    border-radius: 25px 0px 25px 25px;
+
+    
+}
+/*Contenido Principal*/
+.contenedor{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.contenido__principal{
+    width: 70%;
+    margin: 3% auto;
+}
+
+.texto__caja{
+       
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    color: var(--color__parrafo);
+    font-size: 19px;
+    justify-content:center;
+
+}
+.contenido__principal img{
+    max-width: 100%;
+    border-radius: 10px;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 20px;
+}
+@media (max-width:720) {
+    .contenido__principal img{
+        width: 100%;
+        max-height: 300px;
+        margin: 3% auto;
+    }
+}
+
+.texto__caja h3{
+    color: #FFFFFF;
+    font-size: 19px;
+}
+
+/*Tarjetas*/
+.contenedor__tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;/*indica que cuando no se noten las tarjetas, estas tarjetas se van a posicionar en forma vertical*/
+    gap: 25px ;/*tiene que ver con el espacio entre tarjetas para que no se peguen*/
+    margin-top: 25px;
+    margin-block-end: 20px;
+}
+
+.tarjeta{
+    width: 325px;    
+    background-color: var(--color__tetra);
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgb(0,0,0, 0.3);
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.tarjeta:hover{
+    transform: translateY(-40px);
+}
+.tarjeta img{
+    width: 100%;
+    height: 350px;
+    
+    object-fit: cover;
+    
+}
+
+.contenido__tarjeta {
+    padding: 20px;
+}
+
+.contenido__tarjeta h1{
+    font-size: 23px;
+    color: var(--color__titulo1);
+}
+
+.contenido__tarjeta p{
+    font-size: 17px;
+    color: var(--color__titulo1);
+}
+
+.boton__tarjeta{
+    display: inline-block; /*que se vea en forma de fila*/
+    background-color: var(--color__negro);
+    color: var(--color__titulo1);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    
+}
+.boton__tarjeta:hover{
+    color: var(--color__principal);
+    background-color: var(--color__blanco) ;
+    text-decoration: none;
+}
+
+
+/*Finaliza Tarjetas*/
+
+/* Padre ejercicio Flexbox*/
+.flex__container{
+    background-color: var(--color__tetra);
+    border: 0px solid var(--color-borde-principal);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10px;
+    -webkit-box-shadow: 14px 10px 19px -14px black;
+    -moz-box-shadow: 14px 0px 19px -14px rgba(0,0,0);
+    box-shadow: 14px 10px 19px -14px rgba(0,0,0);
+    border-radius: 20px;
+    
+}
+
+
+
+/* hijos ejercicio Flexbox */
+.box__01{
+    background-color: var(--color-primario);
+    background: linear-gradient(to bottom, #6b0604e8,#a3310b60), url("../img/mesaPastel.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.box__02{
+    background-color: var(--color-secundario);
+    background: url("../img/carrucel.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: #a40d0d;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+
+.box__03{
+    background-color: var(--color-primario);
+    background: url("../img/mesas2.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.box__04{
+    background-color: var(--color-secundario);
+    background: url("../img/patio.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+
+}
+/*inicia mapa*/
+.mapa{
+    max-width: 720px;
+    margin: 0 auto;
+    /*width="600" height="450" style="border:0;"*/
+
+    }
+.mapa iframe{
+    width: 100%;
+    border: 5px solid var(--color__secundario) !important;
+    margin: 0 auto;
+}
+.video{
+    max-width: 720px;
+    margin: 0 auto;
+    /*width="560" height="315"*/
+    }
+.video iframe{
+    width: 100%;
+    border: 5px solid var(--color__terciario) !important;
+    margin: 0 auto;
+}
+/*Termna mapa*/
+/* Footer */
+.footer{
+    background: var(--color__secundario);
+    padding: 30px 0px;
+    text-align: center;
+    color: var(--color__principal);
+}
+.footer a{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.footer .contenido__footer{
+    width: 100%;
+    margin: 2% 0%;
+    text-decoration: none;
+}
+
+.footer .contenido__footer ul{
+    width: 100%;
+}
+
+.footer .contenido__footer li{
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.footer .contenido__footer a i{
+    font-size: 27px;
+    margin: 0 20px;
+}
+
+@media (max-width:720px){
+    .footer{
+        text-align: left;
+        padding: 15px;
+    }
+    .footer .contenido__footer ul li{
+        display: block;
+        margin: 20px 0px;
+        text-align: left;
+    }
+    .footer .contenido__footer li{
+        display: inline-block;
+        margin: 0 5%;
+    }
+}
+
+/*Portada Fotos*/
+.flex__containerFotos{
+    border: 0px solid var(--color-borde-principal);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 99%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 110px;
+    border-radius: 20px;
+    padding-bottom: 1%;
+}
+.flex__containerFotos h1{
+    color: var(--color__principal);
+}
+.foto__01{
+    background-color: var(--color-primario);
+    background: url("../img/globosPortada.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 20px;
+}
+
+/*tarjeta de la pagina de acerca de*/
+.card {
+    margin: 5% auto;
+    max-width: 920px;
+}
+
+.card img{
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
+    
+}
+/*aquí termina tarjeta de la pagina de acerca de*/
+
+
+/***Carruselversion 22222***/
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    background-color: #b9b9b9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 10px; /* Añadir separación entre las imágenes */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    position: relative; /* Para posicionar el texto dentro del contenedor */
+    min-width: calc(33.33% - 10px); /* Restar el espacio del gap para cada item */
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .carousel-item img {
+    width: auto;
+    height: 200px; /* Altura fija reducida para todas las imágenes */
+    object-fit: cover; /* Recorta y ajusta la imagen */
+    border-radius: 10px;
+    transition: filter 0.5s ease-in-out; /* Transición suave para el filtro */
+  }
+  
+  .carousel-item:hover img {
+    filter: brightness(50%); /* Imagen se oscurece al pasar el cursor */
+  }
+  
+  .carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
+    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; /* Transición suave para el texto */
+  }
+  
+  .carousel-item:hover .carousel-text {
+    transform: translate(-50%, -50%) scale(1.1); /* Texto se agranda ligeramente */
+    color: #fff; /* Color del texto cambia al pasar el cursor */
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(1, 30, 63, 0.616);
+    color: white;
+    border: none;
+    width: 40px; /* Ancho y altura igual para hacer un círculo perfecto */
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Tamaño de la flecha */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transición suave para las flechas */
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+
+  .prev:hover, .next:hover {
+    transform: translateY(-50%) scale(1.2); /* Agrandar las flechas */
+    background-color:rgba(1, 30, 63, 0.918); /* Hacer las flechas más opacas */
+  }
+/***fin carruselversion 2222***/

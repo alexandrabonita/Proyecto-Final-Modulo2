@@ -1,0 +1,306 @@
+/*1css Inicio: importar las fuentes de texto*/
+    /*fuentes cursivas*/
+        @import url("../fonts/cursivas/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+        
+        @import url("../fonts/cursivas/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf");
+        @import url("../fonts/cursivas/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+
+        @import url("../fonts/cursivas/Playwrite_AU_VIC/PlaywriteAUVIC-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_ES/PlaywriteES-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_ES_Deco/PlaywriteESDeco-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_FR_Trad/PlaywriteFRTrad-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_MX/PlaywriteMX-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_NG_Modern/PlaywriteNGModern-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_NZ/PlaywriteNZ-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_PL/PlaywritePL-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_PT/PlaywritePT-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_RO/PlaywriteRO-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_SK/PlaywriteSK-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_US_Trad/PlaywriteUSTrad-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_VN/PlaywriteVN-VariableFont_wght.ttf");
+
+    /*fuentes de molde*/
+        @import url("../fonts/de_molde/Comic_Neue/ComicNeue-Bold.ttf");
+        @import url("../fonts/de_molde/Comic_Neue/ComicNeue-BoldItalic.ttf");
+        @import url("../fonts/de_molde/Comic_Neue/ComicNeue-Italic.ttf");
+        @import url("../fonts/de_molde/Comic_Neue/ComicNeue-Light.ttf");
+        @import url("../fonts/de_molde/Comic_Neue/ComicNeue-LightItalic.ttf");
+        @import url("../fonts/de_molde/Comic_Neue/ComicNeue-Regular.ttf");
+
+        @import url("../fonts/de_molde/Dosis/Dosis-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/EB_Garamond/EBGaramond-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-Black.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-BlackItalic.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-Bold.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-BoldItalic.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-ExtraBold.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-ExtraBoldItalic.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-ExtraLight.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-ExtraLightItalic.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-Italic.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-Light.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-LightItalic.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-Medium.ttf");
+
+        @import url("../fonts/de_molde/Gideon_Roman/GideonRoman-Regular.ttf");
+
+        @import url("../fonts/de_molde/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Karla/Karla-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Karla/Karla-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Libre_Baskerville/LibreBaskerville-Bold.ttf");
+        @import url("../fonts/de_molde/Libre_Baskerville/LibreBaskerville-Italic.ttf");
+        @import url("../fonts/de_molde/Libre_Baskerville/LibreBaskerville-Regular.ttf");
+
+        @import url("../fonts/de_molde/Libre_Franklin/LibreFranklin-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Lora/Lora-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Lora/Lora-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Luxurious_Roman/LuxuriousRoman-Regular.ttf");
+
+        @import url("../fonts/de_molde/Mukta/Mukta-Bold.ttf");
+        @import url("../fonts/de_molde/Mukta/Mukta-ExtraBold.ttf");
+        @import url("../fonts/de_molde/Mukta/Mukta-ExtraLight.ttf");
+        @import url("../fonts/de_molde/Mukta/Mukta-Light.ttf");
+        @import url("../fonts/de_molde/Mukta/Mukta-Medium.ttf");
+        @import url("../fonts/de_molde/Mukta/Mukta-Regular.ttf");
+        @import url("../fonts/de_molde/Mukta/Mukta-SemiBold.ttf");
+
+        @import url("../fonts/de_molde/Mulish/Mulish-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Mulish/Mulish-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Nanum_Gothic/NanumGothic-Bold.ttf");
+        @import url("../fonts/de_molde/Nanum_Gothic/NanumGothic-ExtraBold.ttf");
+        @import url("../fonts/de_molde/Nanum_Gothic/NanumGothic-Regular.ttf");
+
+        @import url("../fonts/de_molde/Noto_Serif/NotoSerif-Italic-VariableFont_wdth\,wght.ttf");
+        @import url("../fonts/de_molde/Noto_Serif/NotoSerif-VariableFont_wdth\,wght.ttf");
+
+        @import url("../fonts/de_molde/Nunito/Nunito-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Nunito/Nunito-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/PT_Serif/PTSerif-Bold.ttf");
+        @import url("../fonts/de_molde/PT_Serif/PTSerif-BoldItalic.ttf");
+        @import url("../fonts/de_molde/PT_Serif/PTSerif-Italic.ttf");
+        @import url("../fonts/de_molde/PT_Serif/PTSerif-Regular.ttf");
+
+        @import url("../fonts/de_molde/Quicksand/Quicksand-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Roboto/Roboto-Black.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-BlackItalic.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-Bold.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-BoldItalic.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-Italic.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-Light.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-LightItalic.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-Medium.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-MediumItalic.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-Regular.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-Thin.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-ThinItalic.ttf");
+
+        @import url("../fonts/de_molde/Romanesco/Romanesco-Regular.ttf");
+
+        @import url("../fonts/de_molde/Work_Sans/WorkSans-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Work_Sans/WorkSans-VariableFont_wght.ttf");
+/*1css Fin: importar las fuentes de texto*/
+
+/*2css Inicio Caja de reseteo de estilo */
+    *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+    }
+/*2css Fin Caja de reseteo de estilo */
+
+/*3css Inicio variables para los colores*/ 
+    :root{
+        /*
+        Tema 1 #2E7FE6 #A6864B #E6A52E #4D6B91 #665B47 #34373C
+        Tema 2 #AA04DB #DB0433 #DB04B4 #6404DB #DB1C04 #DC81CB
+        Tema 3 #BB3490 #914077 #E619A6 #663E59 #3C2E37 #332C31
+        Tema 4 #2C332E #2F332C #B3236C #4FB370 #4FB370 #332C2F
+        Tema 5 #2C332E #2F332C #B3236C #4FB370 #78B34F #332C2F
+        Tema 6 #68C0EC #59A5CA #6CC8F5 #4A89A8 #3B6D86 #2C5264 azules
+        Tema 7 #EC6121(texto negro) #CA531C(texto negro) #F56723(texto negro) #A84518(texto blanco) #863713(texto blanco) #64290E(texto blanco) Naranjas
+        Tema 8 morado azul verde amarillo rojo brillantes #970FF2 #059F2 #49D907 #EAF205 #F2607 ME GUSTA MUCHO PARA EL SALÓN
+        Tema 9 azul marino azul fuerte verdeazul naranja cremacarne #020659 #023E73 #0396A6 #F2A663 #F2D2B6 ME GUSTA PARA EL SITIO DEL PROFE FRANK
+        Tema 10 ROJO VIOLETA VERDE AMARILLO NARANJA  #BF0B3B #D50DD9 #238C2A #F2B90C #F27405 ME GUSTA MUCHO PARA EL SALÓN
+        Tema 11 rojo fushia rosaintenso azulmarino verdemostaza #BF0436 #F20587 #8C034E #020F59 #A68B03
+        */
+        --color__nav:#230633; /*headers y footers*/
+        --color__textoNav:#FFFFFF;/*headers y footers*/
+
+        --color__footer:#230633;
+        --color__tectoFooter:#FFFFFF;
+
+        --color__fondo1:#F2B90C; /*--color__principal*//*Fondo del sitio*/
+        --color__fondo2:#238C2A;/*--color__secundario*//*Contenedor de 1º Nível*/
+        --color__fondo3:#F27405;/*--color__terciario*//*Contenedor de 2º Nível*/
+        --color__fondo4:#BF0B3B;/*--color__tetra*//*HOVER*/
+        
+        --color__contenedorNivel1::#238C2A;
+        --color__contenedorNivel2:F27405;
+        --color__hover:#BF0B3B;
+        --color__hover2:#238C2A;
+        
+        --color__textoNav: #F2B90C;
+        --color__titulo1: #FFFFFF;/*Títulos sobre fondo del sitio*/
+        --color__titulo2:#FFFFFF;/*Títulos sobre contenedores de 1º Nível*/
+        --color__titulo3:#FFFFFF;/*Títulos sobre contenedores de 2º Nível*/
+
+        --color__parrafo:#FFFFFF;
+        
+        --color__blanco: #FFFFFF;
+        --color__negro: #000000;
+    }
+/*3css Fin variables para los colores*/ 
+/*4css Inicio Configuración General del cuerpo de la página*/
+    body{
+        background-color: var(--color__fondo1) !important;
+        font-family: "Merriweather", serif;
+        font-weight: 600;
+        font-style: normal;
+        }
+        
+/*4css Fin Configuración General del cuerpo de la página*/    
+/*5css Inicio Barra fija superior con las opciones */
+    nav{
+        background: var(--color__nav);
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+    }
+    .imagenLogo {
+        /* Eliminar line-height y padding */
+        height: 100px;
+        background-size: 100%; /* Ajustar el tamaño de la imagen al contenedor */
+        display: flex; /* Usar flexbox para alinear verticalmente */
+        align-items: center; /* Alinear verticalmente en el centro */
+    }
+      
+    nav ul{
+        float: right;
+        margin-right: 40px;
+    }
+    nav ul li{
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 7px;
+    }
+    nav ul li a{
+        color: var(--color__textoNav);
+        font-size: 17px;
+        text-decoration: none;
+    }
+    a:hover{
+        background-color: var(--color__hover);
+        color: var(--color__blanco);
+        transition: 2s;
+    }
+    .checkbtn{
+        font-size: 30px;
+        color: var(--color__blanco);
+        float: right;
+        line-height: 100px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{   
+        display: none;
+    }
+    .imagenLogo img {
+        width: 6.7%; /* Ocupar todo el ancho disponible */
+        height: auto; /* Mantener la relación de aspecto */
+    }
+    @media (max-width:752px){/*le estamos diciendo a nuestra página 
+        que a partir de 752 px ocurra esto */
+        .imagenLogo img {
+            width: 6.5%; /* Ocupar todo el ancho disponible */
+            height: auto; /* Mantener la relación de aspecto */
+        }
+        nav ul l a{
+            font-size: 12px;
+        }
+        /*label.checkbtn {
+            color: var(--color__textoNav);
+            display: flex;
+            justify-content: flex-end; /* Alinear elementos al final */
+            align-items: center; /* Alinear verticalmente en el centro */
+        /*}*/
+    }
+    @media (max-width:858px){
+        .checkbtn{
+            display: flex;
+            color: var(--color__textoNav)!important;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        nav ul{
+            position: fixed;
+            height: 100vh;
+            background-color: var(--color__hover);
+            width: 100%;
+            top: 100px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            z-index: 1;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 19px;
+        }
+        a:hover{
+/****Preguntar por que no se marca el hover en el menú responsivo***/
+            background-color: var(--color__hover2);
+            color: var(--color__blanco);
+            transition: 2s;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+    }
+/*5css Fin Barra fija superior con las opciones */
+h1{
+    color:var(--color__parrafo);  
+}
+.carrusel {
+    position: relative; /* Permite posicionar elementos absolutamente dentro */
+    width: 500px; /* Ancho del carrusel */
+    height: 300px; /* Alto del carrusel */
+    overflow: hidden; /* Oculta las imágenes que se desbordan */
+  }
+  .carrusel img {
+    position: absolute; /* Posicionamiento absoluto dentro del carrusel */
+    top: 1000; /* Posición inicial en el eje Y */
+    left: 0; /* Posición inicial en el eje X */
+    width: 100%; /* Ancho de la imagen */
+    height: 100%; /* Alto de la imagen */
+    transition: transform 0.5s ease-in-out; /* Animación de transición */
+  }
+  
+
+
+
+    

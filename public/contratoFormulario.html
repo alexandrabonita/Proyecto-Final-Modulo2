@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="./css/estilos_Contrato.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h1>Formulario de Registro para Contrato</h1>
+    <section id="contenedor__formulario">
+        <form>
+            <!--Renglon 1-->
+            <div class="renglonFormulario">
+                <label for="genero"></label>
+                    <select id="genero" name="genero">
+                        <option value="el señor">El señor</option>
+                        <option value="la señora">La señora</option>
+                        <option value="C.">C.</option>
+                    </select>                
+                <label for="nombres">Nombres:</label>
+                    <input type="text" id="nombres" placeholder="Nombres" name="nombres" required >
+                <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" placeholder="Apellido Paterno     Apellido Materno" name="apellidos" required>
+            </div>
+            <div class="domicilio">
+            <!--Renglon 2-->
+                <div class="renglonFormulario">
+                    <label for="calle">Calle:</label>
+                        <input type="text" id="calle" name="calle" required>
+                    <label for="numero_ext">No. Exterior</label>
+                        <input type="text" id="numero_ext" name="numero_ext" required>
+                    <label for="numero_int">No. interior</label>
+                        <input type="text" id="numero_int" name="numero_int" >
+                </div>
+            <!--Renglon 3-->
+                <div class="renglonFormulario">
+                    <select id="colonia2" name="colonia2" >
+                        <option value="Col.">Col. </option>
+                        <option value="Fracc.">Fracc</option>
+                        <option value="Poblado">Poblado</option>
+                    </select>
+                        <input type="text" id="colonia" name="colonia" placeholder="Fraccionamento, colonia o poblado" required>
+                    <label for="ciudad">ciudad</label>
+                        <input type="text" id="ciudad" name="ciudad" required>
+                    <label for="estado">estado</label>
+                        <input type="text" id="estado" name="estado" required>
+                    <label for="cp">C.P.:</label>
+                        <input type="text" id="cp" name="cp" required>
+                </div>
+            </div>
+            <div class="renglonFormulario">
+            <!--Renglon 4-->
+                <label for="telefono">teléfono</label>
+                    <input type="text" id="telefono" name="telefono" >
+                <label for="celular">celular</label>
+                    <input type="text" id="celular" name="celular" required>
+                <label for="email">correo electrónico</label>
+                    <input type="text" id="email" name="email" required>
+            </div>
+            <div class="renglonFormulario">
+            <!--Renglon 5-->
+                <!-- Cuando se disponga de servidor PHP
+                    <label for="fecha_evento">Fecha del Evento:</label>
+                    <input type="date" id="fecha_evento" name="fecha_evento" required min="<?php echo date('Y-m-d'); ?>">
+                -->
+                <label for="fecha_evento">Fecha del Evento:</label>
+                    <input type="date" id="fecha_evento" name="fecha_evento" required>
+                <label for="fecha_contrato">Fecha de firma de Contrato:</label>
+                    <input type="date" id="fecha_contrato" name="fecha_contrato" required>
+                <label for="cupo">Cupo:</label>
+                    <input type="number" id="cupo" name="cupo" required value="125">
+            </div>
+            <div class="renglonFormulario">
+            <!--Renglon 6-->
+                <label for="hora_inicio">Hora de Inicio:</label>
+                    <input type="time" id="hora_inicio" name="hora_inicio" required onchange="CalculaHoraFin(this.value)" value="16:00">
+                <label for="hora_fin">Hora de Fin:</label>
+                    <input type="text" id="hora_fin" name="hora_fin" readonly value="21:00">
+                
+                <label for="tipo_evento">Tipo de Evento:</label>
+                    <select id="tipo_evento" name="tipo_evento">
+                        <option value="Cumpleaños">Cumpleaños</option>
+                        <option value="Bautizo">Bautizo</option>
+                        <option value="Capacitaciones">Capacitaciones</option>
+                        <option value="Conferencias">Conferencias</option>
+                        <option value="Convivencia Familiar">Convivencia Familiar</option>
+                        <option value="Graduaciones">Graduaciones</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <input type="text" id="otroEspecifique" name="otroEspecifique"  placeholder="Especifique tipo evento">
+                </div>
+                        
+            <div class="renglonFormulario">
+            <!--Renglon 7-->
+                <label for="hora_fin_maximo">Deberá desocuparse Máximo:</label>
+                    <input type="text" id="hora_fin_maximo" name="hora_fin_maximo" readonly value="22:00">
+            </div>
+            <div class="renglonFormulario">
+            <!--Renglon 8-->
+                <label for="precio_lj">de lunes a jueves: $</label>
+                    <input type="number" id="precio_lj" name="precio_lj" required value="3000">
+                <label for="precio_vd">de viernes a domingo: $</label>
+                    <input type="number" id="precio_vd" name="precio_vd" required value="3800">
+                <label for="anticipo">Anticipo:</label>
+                    <input type="number" id="anticipo" name="anticipo" required>
+                <label for="anticipoLetra">con letra:</label>
+                    <input type="text" id="anticipoLetra" name="anticipoLetra" required>
+            </div>
+
+            <!--button type="submit">Guardar</button-->
+        </form>
+    </section>
+    <section id="contenedor__contrato">
+        <div class="Contrato">
+            <h2 id="Contratoh1">CONTRATO DE ARRENDAMIENTO DEL SALÓN INFANTIL</h2>
+            <h2 id="Contratoh2">EL PALACIO DE CRISTAL</h2>
+
+            <p>Que celebran por una parte <b><i>EL PALACIO DE CRISTAL</i></b>, a quien en lo sucesivo se le denominará "La Empresa" (o arrendador) y por otra parte <span id="generoActualizado"></span> <b><i><span id="nombreCompleto"></span></i></b> con domicilio en: <span id="domicilioCompleto"></span>, correo electrónico $email,  teléfono $telefono y celular $celular, a quién en lo sucesivo se le denominará "El cliente" (o arrendatario) al tenor de las siguientes declaraciones y cláusulas:</p>
+
+            <!--p>1ª Se dará en arrendamiento el local objeto de este contrato el $fecha_evento el cual será destinado para $tipo_evento. La renta será por <b>CINCO HORAS</b>, a partir de las $hora_inicio y hasta las $hora_fin. Se entregará dicho local 30 min antes de la celebración del evento, <span class="destacado-azul">una vez finalizado este, debe desalojarse totalmente a la hora convenida, en caso de exceder el tiempo se generará un costo adicional del $500.00 (quinientos pesos MN)</span> por cada media hora y dependerá de la disponibilidad de renta del salón. No se podrá dar por recibido el salón, dejando invitados, músicos o personal de servicios que hayan contratado, el salón <span class="destacado-rojo">DEBERÁ QUEDAR DEBIDAMENTE DESOCUPADO COMO MÁXIMO A LAS 20:30 HORAS</span>.</p>
+            <p>2ª El arrendamiento que se contratará es para <span class="destacado-azul">$cupo personas</span>; niños y adultos (aceptando como máximo $cupo+20 personas) y tendrá un costo de $costo <!-$costo se calcula con una función que revisa si la fecha del evento es de l-j o de v-d -> y un pago opcional de $700 (setecientos pesosMN) en caso de introducir bebidas alcohólicas. el cliente acepta que el cupo del salón <span class="destacado-rojo">NO DEBERÁ EXCEDERSE DE $cupo+20 PERSONAS (NIÑOS Y ADULTOS)</span>, en caso contrario se compromete a pagar la cantidad de $500 (quinientos pesos si excede la cantidad aquí mencionada).</p>
+            <!--p>3ª El cliente se obliga a no dañar de ninguna forma las instalaciones del local objeto del arrendamiento, por lo que queda prohibido clavar, atornillar, pintar, pegar adornos con silicona u otros adhesivos, romper, cortar o lesionar de alguna forma las instalaciones, además se compromete a responder por los daños que ocasionen a las instalaciones o al personal durante la celebración de su evento. Para adornar se utilizarán las argollas existentes en los pilares, utilizando rafia, hilos o estambres. <span class="destacado-rojo">NO SE PERMITE EL USO DE CONFETI O PAPEL CORTADO EN TROCITOS, NI CASCARONES DE HUEVO RELLENOS DE CONFETI O HARINA</span>.</p>
+            <p>4ª La empresa proporcionará música a través de un equipo de sonido, así como una persona para su cuidado. es muy importante que cuando se contrate cualesquier servicios de animación les haga saber que deberán traer su propio sonido, el cual usarán durante su espectáculo, ya que <span class="destacado-azul">sin excepción NO SE PERMITE EL ACCESO O MANEJO del equipo de sonido porpiedad del salón</span> <span class="destacado-rojo"></span>.</p>
+            <p>5ª El salón es un área recreativa y las personas a cargo de ella son un servicio para hacer más placentera su estancia, sin embargo, la empresa no se hace responsable por ningún tipo de accidente que ocurra, por lo que se recomienda vigilar el uso correcto de las instalaciones.</p>
+            <p>6ª <span class="destacado-naranja">Si alguna de las partes desea dar po cancelado el contrato o cambiar de fecha, deberá pagar un 50% del importe del arrendamiento como indemnización. </span>En caso de controversia con la interpretación o incumplimiento de éste contraro, ambas partes se obligan a agotar primeramente el procedimiento que corresponda ante la PROFECO antes de iniciar cualquier procedimiento jurisdiccional ante los tribunales competentes de esta ciudad.</p>
+            <p>El cliente a la firma de este contrato entrega como anticipo la cantdad de: $ $anticipo ($anticipoLetra) </p>
+            <p>Para su adecuada interpretación y cumplimiento se firma el presente contrato por duplicado el $fecha_contrato en la ciudad de Durango, Dgo.</p-->
+            <div class="firmas">
+                <div class="firma-izquierda">
+                <p class="firma">___________________</p>
+                <p class="leyenda">El Palacio de Cristal</p>
+                </div>
+                <div class="Logo-firma" ><img id="logo-firma" src="./img/Logo-firma.jpg" alt=""></div>
+                <div class="firma-derecha">
+                <p class="firma">___________________</p>
+                <p class="leyenda">El Cliente</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    
+
+
+
+    <script src="./js/contrato.js"></script>
+    <!--script src="./js/contrato copy.js"></script-->
+    <!--script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script-->
+    <!--1. Registro en Google Cloud Platform:
+            Visita la consola de Google Cloud: Accede a https://console.cloud.google.com/
+            Iniciar sesión: Utiliza tu cuenta de Google (Gmail, etc.) para iniciar sesión o crea una si aún no tienes.
+            Aceptar los términos de servicio: Lee y acepta los términos de servicio de Google Cloud Platform.
+        2. Crear un proyecto:
+            Seleccionar o crear un proyecto:
+            Si ya tienes proyectos, selecciónalo del menú desplegable en la parte superior de la consola.
+            Si es nuevo, haz clic en "Seleccionar un proyecto" y luego en "Nuevo proyecto".
+            Nombrar el proyecto: Asigna un nombre descriptivo a tu proyecto (por ejemplo, "MiProyectoGeocoding").
+            Ubicación: Elige la ubicación del proyecto (la región donde se almacenarán los datos).
+            Crear: Haz clic en "Crear" para finalizar la creación del proyecto.
+        3. Habilitar el servicio de Geocoding:
+            Navegar a la biblioteca de APIs: En la consola de Google Cloud, busca y selecciona "APIs y servicios".
+            Acceder a la biblioteca: En el menú de la izquierda, haz clic en "Biblioteca".
+            Buscar Geocoding: En el campo de búsqueda, escribe "Geocoding" y selecciona la API de Geocoding de Google Maps.
+            Habilitar la API: Haz clic en el botón "Habilitar" para activar el servicio de Geocoding en tu proyecto.
+        4. Obtener la clave API:
+            Crear credenciales:
+            En la consola de Google Cloud, busca y selecciona "Credenciales".
+            Haz clic en "Crear credenciales" y luego en "Clave de API".
+            Restringir la clave (opcional): Para mayor seguridad, puedes restringir el uso de la clave API a ciertos orígenes HTTP o IP.
+            Copiar la clave: Una vez creada, copia la clave API en un lugar seguro. ¡No la compartas con nadie!
+        Importante:
+            Facturación: Google Cloud ofrece un crédito gratuito inicial, pero ten en cuenta que después de consumirlo se te cobrarán los servicios utilizados. Revisa las opciones de facturación y establece un presupuesto si es necesario.
+            Límites de uso: El servicio de Geocoding tiene límites de uso diarios. Si planeas realizar muchas solicitudes, es recomendable revisar los límites y considerar opciones de facturación más flexibles.
+        Consideraciones adicionales:
+            Seguridad: Protege tu clave API como si fuera una contraseña. No la incluyas en código público y evita compartirla.
+            Mejores prácticas: Consulta la documentación oficial de Google Maps Platform para conocer las mejores prácticas de uso del servicio de Geocoding y otras APIs relacionadas.
+        Documentación oficial:
+            Para obtener información más detallada y actualizada, consulta la documentación oficial de la API de Geocoding de Google Maps: https://developers.google.com/maps/documentation/javascript/geocoding?hl=es-419
+        Nota: Con esta clave API, se podrá realizar solicitudes de geocodificación 
+            para convertir direcciones en coordenadas geográficas y viceversa. Esto es 
+            fundamental para muchas aplicaciones, como mapas interactivos, búsqueda de 
+            ubicaciones y análisis de datos geográficos.-->
+
+</body>
+</html>
+
+
+
+<!-- *****************
+id="genero" 
+id="nombres" 
+id="calle" name="calle" required>
+id="numero_ext" name="numero_ext" required>
+id="numero_int" name="numero_int" >
+id="colonia2" name="colonia2">
+id="colonia" name="colonia" required>
+id="ciudad" name="ciudad" required>
+id="estado" name="estado" required>
+id="cp" name="cp" required>
+id="telefono" name="telefono" required>
+id="celular" name="celular" required>
+id="email" name="email" required>
+id="fecha_evento" name="fecha_evento" required>
+id="fecha_contrato" name="fecha_contrato" required>
+id="hora_inicio" name="hora_inicio" required onchange="CalculaHoraFin(this.value)" value="16:00">
+id="hora_fin" name="hora_fin" readonly value="21:00">
+id="cupo" name="cupo" required value="125">
+id="tipo_evento" name="tipo_evento">
+id="otroEspecifique" name="otroEspecifique"  placeholder="Especifique tipo evento">
+id="precio_lj" name="precio_lj" required value="3500">
+id="precio_vd" name="precio_vd" required value="4500">
+id="anticipo" name="anticipo" required>
+*************** -->

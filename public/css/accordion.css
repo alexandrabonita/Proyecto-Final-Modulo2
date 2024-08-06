@@ -1,0 +1,50 @@
+.accordion{ /*: Este es el elemento contenedor principal para el acordeón.*/
+
+}
+.accordion-item{/*: Esta clase define cada elemento de acordeón individual.*/
+
+}
+.accordion-header{/*: Esta clase aplica estilos a la sección de encabezado de cada elemento, que generalmente contiene el botón.*/
+    
+}
+.accordion-button{/*: Esta clase aplica estilos al botón que activa la funcionalidad de contraer/expandir.*/
+
+}
+.accordion-collapse{/*: Esta clase define la sección de contenido que se expande/contrae.*/
+
+}
+.collapse{/* : Esta clase de Bootstrap maneja la funcionalidad de contraer/expandir con transiciones.*/
+
+}
+.show{/*: Esta clase de Bootstrap se aplica a la sección de contenido visible inicialmente.*/
+
+}
+.collapsed{/*: Esta clase de Bootstrap se aplica a las secciones de contenido ocultas.*/
+
+}
+.accordion-body{/*: Esta clase aplica estilos al área de contenido dentro de la sección contraída.*/
+
+}
+/*
+Colores de fondo: Puedes usar clases como .accordion, .accordion-item, .accordion-header, .accordion-body para establecer colores de fondo para diferentes partes del acordeón.
+Bordes: Utiliza propiedades CSS como border, border-color y border-radius para diseñar bordes para el acordeón y sus elementos.
+Estilos de fuente: Utiliza clases como .accordion-button y .accordion-body para modificar propiedades de fuente como tamaño, familia y color.
+Relleno y márgenes: Utiliza las propiedades padding y margin para ajustar el espaciado entre los elementos dentro del acordeón.
+*/
+.accordion {
+    background-color: #f5f5f5; /* Fondo gris claro para el acordeón */
+    border: 1px solid #ddd; /* Agregar un borde delgado */
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px; /* Agregar espacio entre elementos */
+  }
+  
+  .accordion-button {
+    color: #333; /* Establecer el color del texto del botón */
+    font-weight: bold; /* Hacer que el texto del botón sea negrita */
+  }
+  
+  .accordion-body {
+    padding: 15px; /* Agregar relleno al área de contenido */
+  }

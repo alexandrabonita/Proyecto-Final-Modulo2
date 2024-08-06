@@ -1,0 +1,369 @@
+:root{
+    /*
+    Tema 1 #2E7FE6 #A6864B #E6A52E #4D6B91 #665B47 #34373C
+    Tema 2 #AA04DB #DB0433 #DB04B4 #6404DB #DB1C04 #DC81CB
+    Tema 3 #BB3490 #914077 #E619A6 #663E59 #3C2E37 #332C31
+    Tema 4 #2C332E #2F332C #B3236C #4FB370 #4FB370 #332C2F
+    Tema 5 #2C332E #2F332C #B3236C #4FB370 #78B34F #332C2F
+    Tema 6 #68C0EC #59A5CA #6CC8F5 #4A89A8 #3B6D86 #2C5264 azules
+    Tema 7 #EC6121(texto negro) #CA531C(texto negro) #F56723(texto negro) #A84518(texto blanco) #863713(texto blanco) #64290E(texto blanco) Naranjas
+    Tema 8 morado azul verde amarillo rojo brillantes #970FF2 #059F2 #49D907 #EAF205 #F2607 ME GUSTA MUCHO PARA EL SALÓN
+    Tema 9 azul marino azul fuerte verdeazul naranja cremacarne #020659 #023E73 #0396A6 #F2A663 #F2D2B6 ME GUSTA PARA EL SITIO DEL PROFE FRANK
+    Tema 10 ROJO VIOLETA VERDE AMARILLO NARANJA  #BF0B3B #D50DD9 #238C2A #F2B90C #F27405 ME GUSTA MUCHO PARA EL SALÓN
+    Tema 11 rojo fushia rosaintenso azulmarino verdemostaza #BF0436 #F20587 #8C034E #020F59 #A68B03
+    */
+
+    /*Colores:*/
+        /*primarios y secundarios: Define los colores principales que utilizarás en tu diseño, 
+            como el color de la marca, el color de fondo principal, etc.*/
+            /*Colores primarios:*/
+                --color__marca: #D50DD9!important;/* (rosa intenso)*/
+                --color__boton_small: #BF0B3B!important;/* (rosa intenso) 
+                        /* (para botones pequeños)*/
+                --color__boton_medium: #238C2A!important;/* (verde oscuro) - Un color de la paleta que 
+                        contraste con el fondo principal, ideal para botones de acción 
+                        secundaria o confirmación.*/
+                --color__boton_large: #D50DD9!important;/* (rosa intenso) - Color primario de la marca 
+                        para destacar los botones más grandes.*/
+            /*Colores secundarios:*/
+                --color__nav: #BF0B3B!important;/* (rojo oscuro)*/
+                --color__fondo1: #F2B90C!important;/* (naranja claro)
+            /*Colores de fondo:*/
+                --color__footer: #238C2A!important;/* (verde oscuro)*/
+                --color__fondo2: #F27405!important;/* (naranja intenso)*/
+                --color__fondo3: #230633!important;/* (azul oscuro)*/
+                --color__fondo4: #BF0B3B!important;/* (rojo oscuro) (alternativo para fondos)*/
+            /*Colores de Gradiente: #BF0B3B #D50DD9 #238C2A #F2B90C #F27405 #230633*/
+                /*Red (#BF0B3B):
+                    Red to Transparent: #BF0B3B80 to transparent
+                    Red to Light Orange: #BF0B3B80 to #F2B90C80
+                    Red to Dark Blue: #BF0B3B80 to #23063380*/
+                    --color__gradientTopRed:#BF0B3B80!important;
+                    --color__gradientBottomRed_a:transparent!important;
+                    --color__gradientBottomRed_b:#F2B90C80!important;
+                    --color__gradientBottomRed_c:#23063380!important;
+                /*Pink (#D50DD9):
+                    Pink to Transparent: #D50DD980 to transparent
+                    Pink to Light Orange: #D50DD980 to #F2B90C80
+                    Pink to Dark Blue: #D50DD980 to #23063380*/
+                    --color__gradientTopPink:#D50DD980 !important;
+                    --color__gradientBottomPink_a:transparent !important;
+                    --color__gradientBottomPink_b:#F2B90C80 !important;
+                    --color__gradientBottomPink_c:#23063380 !important;
+                /*Dark Green (#238C2A):
+                    Dark Green to Transparent: #238C2A80 to transparent
+                    Dark Green to Light Orange: #238C2A80 to #F2B90C80
+                    Dark Green to Dark Blue: #238C2A80 to #23063380*/
+                    --color__gradientTopDarkGreen:#238C2A80 !important;
+                    --color__gradientBottomDarkGreen_a:transparent !important;
+                    --color__gradientBottomDarkGreen_b:#F2B90C80 !important;
+                    --color__gradientBottomDarkGreen_c:#23063380 !important;
+                /*Light Orange (#F2B90C):
+                    Light Orange to Transparent: #F2B90C80 to transparent
+                    Light Orange to Dark Orange: #F2B90C80 to #F2740580
+                    Light Orange to Dark Blue: #F2B90C80 to #23063380*/
+                    --color__gradientTopOrange:#F2B90C80 !important;
+                    --color__gradientBottomOrange_a:transparent !important;
+                    --color__gradientBottomOrange_b:#F2740580 !important;
+                    --color__gradientBottomOrange_c:#23063380 !important;
+                /*Dark Orange (#F27405):
+                    Dark Orange to Transparent: #F2740580 to transparent
+                    Dark Orange to Dark Blue: #F2740580 to #23063380*/
+                    --color__gradientTopDarkOrange:#F2740580 !important;
+                    --color__gradientBottomDarkOrange_a:transparent !important;
+                    --color__gradientBottomDarkOrange_b:#23063380 !important;
+                /*Dark Blue (#230633):
+                    Dark Blue to Transparent: #23063380 to transparent*/
+                    --color__gradientTopDarkBlue:#23063380 !important;
+                    --color__gradientBottom:transparent !important;
+            /*Colores de contenedores:*/
+                --color__contenedorNivel1: #F2B90C!important;/* (naranja claro)*/
+                --color__contenedorNivel2: #238C2A!important;/* (verde oscuro)*/
+        /*Colores de texto: Define los colores para el texto principal, los títulos, los enlaces, 
+            etc.*/
+        /*Colores de texto:*/
+            /*Texto principal:*/ 
+                --color__textoParrafo: #333!important; /*(gris oscuro)*/
+                --color__textoparrafo2:#FFFFFF!important;
+            /*Títulos:*/
+                --color__titulo1: #D50DD9!important; /*(rosa intenso)*/
+                --color__titulo2: #BF0B3B!important; /*(rojo oscuro)*/
+                --color__titulo3: #F2B90C!important; /*(naranja claro)*/
+                --color__titulo_default: #FFFFFF!important;
+            /*Enlaces:*/
+                --color__enlaces: #D50DD9!important; /*(rosa intenso) (sin subrayado)*/
+                --color__enlaces:hover: #BF0B3B!important; /*(rojo oscuro)*/
+            /*Nav y Footer:   headers y footers*/
+                --color__textoNav:#FFFFFF!important; /*(blanco)*/
+                --color__textoNav2:#F2B90C!important;/*(Naranja coral)*/
+                --color__textoFooter:#FFFFFF!important;/*(blanco)*/
+                --color__textoFooter2:#F2B90C!important;/*(Naranja coral)*/
+            /*Botones*/
+                --color__textoBoton_small: #FFFFFF!important;/*(blanco)
+                        alternativas: 
+                            #e0e0e0 (gris claro): Puede ser una opción si buscas un tono más 
+                                suave que el blanco puro.
+                            #f2f2f2 (gris muy claro): Similar al gris claro, pero aún más sutil.*/
+                --color__textoBoton_medium: FFFFFF!important;/*(blanco)
+                        alternativas: 
+                            #e0e0e0 (gris claro): Puede ser una opción si buscas un tono más 
+                                suave que el blanco puro.
+                            #f2f2f2 (gris muy claro): Similar al gris claro, pero aún más sutil.*/
+                --color__textoBoton_large: #D50DD9!important;
+
+        /*Colores de estado: Define colores para estados como hover, active, error, etc.*/
+        /*Colores de estado:*/
+            /*Hover:*/
+                --color__hover:#BF0B3B!important;/* (rojo oscuro)*/
+                --color__hover2: #F2B90C;/* (naranja claro)*/
+                --color__hover2:#238C2A!important;
+            /*Active:*/
+                --color__active: #D50DD9;/* (rosa intenso)*/
+                --color__active2: #F27405;/* (naranja intenso)*/
+            /*Error:*/
+                --color__error: #F27405;/* (naranja intenso)*/
+                --color__error2: #BF0B3B;/* (rojo oscuro)*/
+        /*Colores Base*/
+            --color__blanco: #FFFFFF!important;
+            --color__negro: #000000!important;
+    /*Bordes: Define los estilos de borde predeterminados para elementos como botones, 
+            cuadros, etc.*/
+        /*Bordes:*/ 
+            --border__radius1: 10px; /* Redondea las esquinas de la tarjeta */
+            --border__radius2: 20px; /*redonde las esquinas de las tarjetas*/
+            --border__radius3: 5px; /* Radio de borde redondeado para botones y otros elementos */
+            --border__width: 1px; /* Ancho de borde predeterminado */
+            --border__color: #ccc; /* Color de borde predeterminado (gris claro) */
+            --border__style: solid; /* Estilo de borde predeterminado (sólido) */
+
+    /*Tamaños:*/
+        /*Tamaños de fuente: Define los tamaños de fuente para diferentes elementos, como 
+            títulos, párrafos, subtítulos, etc.*/
+            --fontsize__titulo1: 24px; /* Tamaño de fuente para títulos de nivel 1 */
+            --fontsize__titulo2: 20px; /* Tamaño de fuente para títulos de nivel 2 */
+            --fontsize__titulo3: 16px; /* Tamaño de fuente para títulos de nivel 3 */
+            --fontsize__parrafo: 14px; /* Tamaño de fuente para párrafos */   
+        /*Unidades de espaciado: Define unidades de espaciado para márgenes, paddings, etc.*/
+            --spacing__unit: 1rem; /* Unidad base de espaciado (recomendado: rem) */
+            --spacing__small: var(--spacing__unit) / 2; /* Espaciado pequeño (la mitad de la unidad base) */
+            --spacing__medium: 15px; /* Espaciado mediano (la unidad base) */
+            --spacing__large: 20px; /* Espaciado grande (el doble de la unidad base) */
+        /*Tamaños de componentes: Define los tamaños estándar para componentes comunes, como 
+            botones, formularios, tarjetas, etc.*/
+            /* Tamaños de botones */
+                --button__size__small: 20px; /* Tamaño de botón pequeño */
+                --button__size__medium: 30px; /* Tamaño de botón mediano */
+                --button__size__large: 40px; /* Tamaño de botón grande */
+            /* Estilos de botones */
+            .button {
+                padding: var(--spacing__medium) var(--spacing__large);
+                font-size: var(--fontsize__parrafo);
+                border: 1px solid #ccc;
+                cursor: pointer;
+            }
+            .button--small {
+                width: var(--button__size__small);
+                height: var(--button__size__small);
+            }
+            .button--medium {
+                width: var(--button__size__medium);
+                height: var(--button__size__medium);
+            }
+            .button--large {
+                width: var(--button__size__large);
+                height: var(--button__size__large);
+            }
+    /*Otras variables:*/
+        /*Tipografías: Define las tipografías que utilizarás en tu diseño, como la fuente 
+            principal, la fuente secundaria, etc.*/
+        /*Tipografías:*/
+            --font__family__principal: "Arial", sans-serif; /* Fuente principal sans-serif legible */
+            --font__family__secundaria: "Roboto", sans-serif; /* Fuente secundaria sans-serif moderna */
+            --font__size__base: 16px; /* Tamaño de fuente base para el cuerpo del texto */
+            --font__weight__normal: 400; /* Peso de fuente normal para texto normal */
+            --font__weight__bold: 700; /* Peso de fuente en negrita para énfasis */
+            --line-height: 1.6; /* Altura de línea para una mejor legibilidad */
+        
+        /*Sombras: Define las sombras predeterminadas para elementos como botones, tarjetas, 
+            etc.*/            
+        /*Sombras:*/            
+            --shadow__color: #000; /* Color de sombra predeterminado (negro) */
+            --shadow__offset-x: 2px; /* Desplazamiento horizontal de la sombra */
+                                     /*Esta variable representa el desplazamiento vertical de la sombra. Define la distancia a la que la sombra parece estar desplazada hacia abajo (valor positivo) o hacia arriba (valor negativo) en relación con el recuadro de borde del elemento.*/
+            --shadow__offset-y: 2px; /* Desplazamiento vertical de la sombra */
+            --shadow__blur: 5px; /* Difuminación de la sombra */
+                                 /*Esta variable representa el radio de difuminación de la sombra. Un valor más alto crea una sombra más difusa y suave, mientras que un valor más bajo crea una sombra más nítida y definida.*/
+            --shadow__spread: 0px; /* Extensión de la sombra */
+                                   /*Esta variable representa el radio de expansión de la sombra. Un valor positivo hace que la sombra se expanda hacia afuera desde su tamaño original, mientras que un valor negativo crea un efecto de sombra interior.*/
+            --shadow__color:rgba(0, 0, 0, 0.1);/*Esta variable representa el color de la sombra. Puede ser cualquier valor de color CSS válido, como #ff0000 (rojo), rgba(0, 0, 255, 0.5) (azul con 50% de transparencia) o una palabra clave como black.*/
+    
+    /*ejemplo de uso
+            .boton {
+                background-color: var(--color__boton_medium);
+                color: var(--color__boton_medium);
+                padding: 10px 20px;
+                font-family: var(--font__family__principal);
+                font-size: var(--font__size__base);
+                font-weight: var(--font__weight__normal);
+                border: var(--border__width) var(--border__style) var(--border__color);
+                border-radius: var(--border__radius3);
+                box-shadow: var(--shadow__offset-x) var(--shadow__offset-y) var(--shadow__blur) var(--shadow__spread) var(--shadow__color);
+            }
+                .titulo {
+                font-family: var(--font__family__secundaria);
+                font-size: 24px;
+                font-weight: var(--font__weight__bold);
+                color: #333;
+                margin-bottom: 20px;
+            }*/
+    
+    
+
+    --ancho__contenido:50%; /*Ejemplo:
+                            /*  .contenido {
+                            /*      width: var(--ancho-contenido); /* Asignar el valor de la variable al ancho 
+                            /*                                     /* del elemento */
+                            /*}*/
+    --alto__boton: 20px;    /*Ejemplo:
+                            /*.boton {
+                            /*  height: var(--alto-boton); /* Asignar el valor de la variable a 
+                            /*                             /* la altura del elemento */
+                            /*}
+
+    --mitad-ancho: calc(50% / 2); /* La mitad del ancho de la ventana en porcentaje */
+    --margen-lateral: calc(10px / 2); /* La mitad del margen lateral en píxeles */
+    --tarjeta__ancho:325px;
+    --tamanioResponsivo: 752px;
+}
+/* Caja de reseteo de estilo */
+*{
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina padding predeterminado */
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; /* Incluye el padding y 
+                el borde en el ancho del elemento */
+}
+
+/* Basic styles */
+body {
+    background-color: var(--color__fondo1);
+    color: var(--color__textoParrafo2);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+header {
+  background-color: var(--color__nav);
+  color: var(--color__textoNav2);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Ajusta el tamaño de la imagen según sea necesario */
+    cursor: pointer; /* Para indicar que la imagen es interactiva */
+}
+
+
+.menuNav {
+  margin-right: 50px;
+}
+
+.menuNav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-right: 40px;
+}
+
+.menuNav li {
+    /*margin-right: 20px;*/
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    line-height: 100px;  /*debe ser el mismo numero de pixeles que mide el nav en este caso 100px*/
+    margin: 0 7px;
+}
+
+
+.menuNav a {
+    text-decoration: none;
+    color: var(--color__textoNav2);
+    font-size: 17px;
+}
+
+.menuNav a:hover{
+    background-color: var(--color__hover2);
+    transition: 5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: var(--color__textoNav2);
+    float: right;
+    line-height: 100px;
+    margin-right: 0px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+#check{  
+    display: none;   
+}
+
+@media (max-width:858px){
+    /*le estamos diciendo a nuestra pagina que a partir de 752 px ocurra esto */
+    
+
+    .menuNav ul l a{
+        font-size: 12px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+    .menuNav ul{
+        position: fixed;
+        height: 100vh;
+        background-color: var(--color__footer);
+        width: 100%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    .menuNav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .menuNav ul li a{
+        font-size: 19px;
+    }
+    a:hover{
+        background: var(--color__principal);
+
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+

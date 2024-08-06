@@ -1,0 +1,1323 @@
+/* Un archivo CSS (Cascading Style Sheets) bien estructurado con buenas prácticas suele contener 
+los siguientes elementos:*/
+
+/*1. Importar las fuentes de texto*/
+    /*fuentes cursivas*/
+        @import url("../fonts/cursivas/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+            
+        @import url("../fonts/cursivas/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf");
+        @import url("../fonts/cursivas/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+
+        @import url("../fonts/cursivas/Playwrite_AU_VIC/PlaywriteAUVIC-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_ES/PlaywriteES-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_ES_Deco/PlaywriteESDeco-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_FR_Trad/PlaywriteFRTrad-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_MX/PlaywriteMX-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_NG_Modern/PlaywriteNGModern-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_NZ/PlaywriteNZ-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_PL/PlaywritePL-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_PT/PlaywritePT-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_RO/PlaywriteRO-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_SK/PlaywriteSK-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_US_Trad/PlaywriteUSTrad-VariableFont_wght.ttf");
+        @import url("../fonts/cursivas/Playwrite_VN/PlaywriteVN-VariableFont_wght.ttf");
+
+    /*fuentes de molde*/
+        @import url("../fonts/de_molde/Comic_Neue/ComicNeue-Bold.ttf");
+        @import url("../fonts/de_molde/Comic_Neue/ComicNeue-BoldItalic.ttf");
+        @import url("../fonts/de_molde/Comic_Neue/ComicNeue-Italic.ttf");
+        @import url("../fonts/de_molde/Comic_Neue/ComicNeue-Light.ttf");
+        @import url("../fonts/de_molde/Comic_Neue/ComicNeue-LightItalic.ttf");
+        @import url("../fonts/de_molde/Comic_Neue/ComicNeue-Regular.ttf");
+
+        @import url("../fonts/de_molde/Dosis/Dosis-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/EB_Garamond/EBGaramond-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-Black.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-BlackItalic.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-Bold.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-BoldItalic.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-ExtraBold.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-ExtraBoldItalic.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-ExtraLight.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-ExtraLightItalic.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-Italic.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-Light.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-LightItalic.ttf");
+        @import url("../fonts/de_molde/Fira_Sans_Condensed/FiraSansCondensed-Medium.ttf");
+
+        @import url("../fonts/de_molde/Gideon_Roman/GideonRoman-Regular.ttf");
+
+        @import url("../fonts/de_molde/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Karla/Karla-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Karla/Karla-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Libre_Baskerville/LibreBaskerville-Bold.ttf");
+        @import url("../fonts/de_molde/Libre_Baskerville/LibreBaskerville-Italic.ttf");
+        @import url("../fonts/de_molde/Libre_Baskerville/LibreBaskerville-Regular.ttf");
+
+        @import url("../fonts/de_molde/Libre_Franklin/LibreFranklin-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Lora/Lora-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Lora/Lora-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Luxurious_Roman/LuxuriousRoman-Regular.ttf");
+
+        @import url("../fonts/de_molde/Mukta/Mukta-Bold.ttf");
+        @import url("../fonts/de_molde/Mukta/Mukta-ExtraBold.ttf");
+        @import url("../fonts/de_molde/Mukta/Mukta-ExtraLight.ttf");
+        @import url("../fonts/de_molde/Mukta/Mukta-Light.ttf");
+        @import url("../fonts/de_molde/Mukta/Mukta-Medium.ttf");
+        @import url("../fonts/de_molde/Mukta/Mukta-Regular.ttf");
+        @import url("../fonts/de_molde/Mukta/Mukta-SemiBold.ttf");
+
+        @import url("../fonts/de_molde/Mulish/Mulish-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Mulish/Mulish-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Nanum_Gothic/NanumGothic-Bold.ttf");
+        @import url("../fonts/de_molde/Nanum_Gothic/NanumGothic-ExtraBold.ttf");
+        @import url("../fonts/de_molde/Nanum_Gothic/NanumGothic-Regular.ttf");
+
+        @import url("../fonts/de_molde/Noto_Serif/NotoSerif-Italic-VariableFont_wdth\,wght.ttf");
+        @import url("../fonts/de_molde/Noto_Serif/NotoSerif-VariableFont_wdth\,wght.ttf");
+
+        @import url("../fonts/de_molde/Nunito/Nunito-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Nunito/Nunito-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/PT_Serif/PTSerif-Bold.ttf");
+        @import url("../fonts/de_molde/PT_Serif/PTSerif-BoldItalic.ttf");
+        @import url("../fonts/de_molde/PT_Serif/PTSerif-Italic.ttf");
+        @import url("../fonts/de_molde/PT_Serif/PTSerif-Regular.ttf");
+
+        @import url("../fonts/de_molde/Quicksand/Quicksand-VariableFont_wght.ttf");
+
+        @import url("../fonts/de_molde/Roboto/Roboto-Black.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-BlackItalic.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-Bold.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-BoldItalic.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-Italic.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-Light.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-LightItalic.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-Medium.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-MediumItalic.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-Regular.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-Thin.ttf");
+        @import url("../fonts/de_molde/Roboto/Roboto-ThinItalic.ttf");
+
+        @import url("../fonts/de_molde/Romanesco/Romanesco-Regular.ttf");
+
+        @import url("../fonts/de_molde/Work_Sans/WorkSans-Italic-VariableFont_wght.ttf");
+        @import url("../fonts/de_molde/Work_Sans/WorkSans-VariableFont_wght.ttf");
+
+
+/*2.Declaraciones de variables CSS: Estas permiten definir valores reutilizables en todo el 
+archivo CSS.*/
+:root{
+    /*
+    Tema 1 #2E7FE6 #A6864B #E6A52E #4D6B91 #665B47 #34373C
+    Tema 2 #AA04DB #DB0433 #DB04B4 #6404DB #DB1C04 #DC81CB
+    Tema 3 #BB3490 #914077 #E619A6 #663E59 #3C2E37 #332C31
+    Tema 4 #2C332E #2F332C #B3236C #4FB370 #4FB370 #332C2F
+    Tema 5 #2C332E #2F332C #B3236C #4FB370 #78B34F #332C2F
+    Tema 6 #68C0EC #59A5CA #6CC8F5 #4A89A8 #3B6D86 #2C5264 azules
+    Tema 7 #EC6121(texto negro) #CA531C(texto negro) #F56723(texto negro) #A84518(texto blanco) #863713(texto blanco) #64290E(texto blanco) Naranjas
+    Tema 8 morado azul verde amarillo rojo brillantes #970FF2 #059F2 #49D907 #EAF205 #F2607 ME GUSTA MUCHO PARA EL SALÓN
+    Tema 9 azul marino azul fuerte verdeazul naranja cremacarne #020659 #023E73 #0396A6 #F2A663 #F2D2B6 ME GUSTA PARA EL SITIO DEL PROFE FRANK
+    Tema 10 ROJO VIOLETA VERDE AMARILLO NARANJA  #BF0B3B #D50DD9 #238C2A #F2B90C #F27405 ME GUSTA MUCHO PARA EL SALÓN
+    Tema 11 rojo fushia rosaintenso azulmarino verdemostaza #BF0436 #F20587 #8C034E #020F59 #A68B03
+    */
+
+    /*Colores:*/
+        /*primarios y secundarios: Define los colores principales que utilizarás en tu diseño, 
+            como el color de la marca, el color de fondo principal, etc.*/
+            /*Colores primarios:*/
+                --color__marca: #D50DD9!important;/* (rosa intenso)*/
+                --color__boton_small: #BF0B3B!important;/* (rosa intenso) 
+                        /* (para botones pequeños)*/
+                --color__boton_medium: #238C2A!important;/* (verde oscuro) - Un color de la paleta que 
+                        contraste con el fondo principal, ideal para botones de acción 
+                        secundaria o confirmación.*/
+                --color__boton_large: #D50DD9!important;/* (rosa intenso) - Color primario de la marca 
+                        para destacar los botones más grandes.*/
+            /*Colores secundarios:*/
+                --color__nav: #BF0B3B!important;/* (rojo oscuro)*/
+                --color__fondo1: #F2B90C!important;/* (naranja claro)
+            /*Colores de fondo:*/
+                --color__footer: #238C2A!important;/* (verde oscuro)*/
+                --color__fondo2: #F27405!important;/* (naranja intenso)*/
+                --color__fondo3: #230633!important;/* (azul oscuro)*/
+                --color__fondo4: #BF0B3B!important;/* (rojo oscuro) (alternativo para fondos)*/
+            /*Colores de Gradiente: #BF0B3B #D50DD9 #238C2A #F2B90C #F27405 #230633*/
+                /*Red (#BF0B3B):
+                    Red to Transparent: #BF0B3B80 to transparent
+                    Red to Light Orange: #BF0B3B80 to #F2B90C80
+                    Red to Dark Blue: #BF0B3B80 to #23063380*/
+                    --color__gradientTopRed:#BF0B3B80!important;
+                    --color__gradientBottomRed_a:transparent!important;
+                    --color__gradientBottomRed_b:#F2B90C80!important;
+                    --color__gradientBottomRed_c:#23063380!important;
+                /*Pink (#D50DD9):
+                    Pink to Transparent: #D50DD980 to transparent
+                    Pink to Light Orange: #D50DD980 to #F2B90C80
+                    Pink to Dark Blue: #D50DD980 to #23063380*/
+                    --color__gradientTopPink:#D50DD980 !important;
+                    --color__gradientBottomPink_a:transparent !important;
+                    --color__gradientBottomPink_b:#F2B90C80 !important;
+                    --color__gradientBottomPink_c:#23063380 !important;
+                /*Dark Green (#238C2A):
+                    Dark Green to Transparent: #238C2A80 to transparent
+                    Dark Green to Light Orange: #238C2A80 to #F2B90C80
+                    Dark Green to Dark Blue: #238C2A80 to #23063380*/
+                    --color__gradientTopDarkGreen:#238C2A80 !important;
+                    --color__gradientBottomDarkGreen_a:transparent !important;
+                    --color__gradientBottomDarkGreen_b:#F2B90C80 !important;
+                    --color__gradientBottomDarkGreen_c:#23063380 !important;
+                /*Light Orange (#F2B90C):
+                    Light Orange to Transparent: #F2B90C80 to transparent
+                    Light Orange to Dark Orange: #F2B90C80 to #F2740580
+                    Light Orange to Dark Blue: #F2B90C80 to #23063380*/
+                    --color__gradientTopOrange:#F2B90C80 !important;
+                    --color__gradientBottomOrange_a:transparent !important;
+                    --color__gradientBottomOrange_b:#F2740580 !important;
+                    --color__gradientBottomOrange_c:#23063380 !important;
+                /*Dark Orange (#F27405):
+                    Dark Orange to Transparent: #F2740580 to transparent
+                    Dark Orange to Dark Blue: #F2740580 to #23063380*/
+                    --color__gradientTopDarkOrange:#F2740580 !important;
+                    --color__gradientBottomDarkOrange_a:transparent !important;
+                    --color__gradientBottomDarkOrange_b:#23063380 !important;
+                /*Dark Blue (#230633):
+                    Dark Blue to Transparent: #23063380 to transparent*/
+                    --color__gradientTopDarkBlue:#23063380 !important;
+                    --color__gradientBottom:transparent !important;
+            /*Colores de contenedores:*/
+                --color__contenedorNivel1: #F2B90C!important;/* (naranja claro)*/
+                --color__contenedorNivel2: #238C2A!important;/* (verde oscuro)*/
+        /*Colores de texto: Define los colores para el texto principal, los títulos, los enlaces, 
+            etc.*/
+        /*Colores de texto:*/
+            /*Texto principal:*/ 
+                --color__textoParrafo: #333!important; /*(gris oscuro)*/
+                --color__textoparrafo2:#FFFFFF!important;
+            /*Títulos:*/
+                --color__titulo1: #D50DD9!important; /*(rosa intenso)*/
+                --color__titulo2: #BF0B3B!important; /*(rojo oscuro)*/
+                --color__titulo3: #F2B90C!important; /*(naranja claro)*/
+                --color__titulo_default: #FFFFFF!important;
+            /*Enlaces:*/
+                --color__enlaces: #D50DD9!important; /*(rosa intenso) (sin subrayado)*/
+                --color__enlaces:hover: #BF0B3B!important; /*(rojo oscuro)*/
+            /*Nav y Footer:   headers y footers*/
+                --color__textoNav:#FFFFFF!important; /*(blanco)*/
+                --color__textoNav2:#F2B90C!important;/*(Naranja coral)*/
+                --color__textoFooter:#FFFFFF!important;/*(blanco)*/
+                --color__textoFooter2:#F2B90C!important;/*(Naranja coral)*/
+            /*Botones*/
+                --color__textoBoton_small: #FFFFFF!important;/*(blanco)
+                        alternativas: 
+                            #e0e0e0 (gris claro): Puede ser una opción si buscas un tono más 
+                                suave que el blanco puro.
+                            #f2f2f2 (gris muy claro): Similar al gris claro, pero aún más sutil.*/
+                --color__textoBoton_medium: FFFFFF!important;/*(blanco)
+                        alternativas: 
+                            #e0e0e0 (gris claro): Puede ser una opción si buscas un tono más 
+                                suave que el blanco puro.
+                            #f2f2f2 (gris muy claro): Similar al gris claro, pero aún más sutil.*/
+                --color__textoBoton_large: #D50DD9!important;
+
+        /*Colores de estado: Define colores para estados como hover, active, error, etc.*/
+        /*Colores de estado:*/
+            /*Hover:*/
+                --color__hover:#BF0B3B!important;/* (rojo oscuro)*/
+                --color__hover2: #F2B90C;/* (naranja claro)*/
+                --color__hover2:#238C2A!important;
+            /*Active:*/
+                --color__active: #D50DD9;/* (rosa intenso)*/
+                --color__active2: #F27405;/* (naranja intenso)*/
+            /*Error:*/
+                --color__error: #F27405;/* (naranja intenso)*/
+                --color__error2: #BF0B3B;/* (rojo oscuro)*/
+        /*Colores Base*/
+            --color__blanco: #FFFFFF!important;
+            --color__negro: #000000!important;
+    /*Bordes: Define los estilos de borde predeterminados para elementos como botones, 
+            cuadros, etc.*/
+        /*Bordes:*/ 
+            --border__radius1: 10px; /* Redondea las esquinas de la tarjeta */
+            --border__radius2: 20px; /*redonde las esquinas de las tarjetas*/
+            --border__radius3: 5px; /* Radio de borde redondeado para botones y otros elementos */
+            --border__width: 1px; /* Ancho de borde predeterminado */
+            --border__color: #ccc; /* Color de borde predeterminado (gris claro) */
+            --border__style: solid; /* Estilo de borde predeterminado (sólido) */
+
+    /*Tamaños:*/
+        /*Tamaños de fuente: Define los tamaños de fuente para diferentes elementos, como 
+            títulos, párrafos, subtítulos, etc.*/
+            --fontsize__titulo1: 24px; /* Tamaño de fuente para títulos de nivel 1 */
+            --fontsize__titulo2: 20px; /* Tamaño de fuente para títulos de nivel 2 */
+            --fontsize__titulo3: 16px; /* Tamaño de fuente para títulos de nivel 3 */
+            --fontsize__parrafo: 14px; /* Tamaño de fuente para párrafos */   
+        /*Unidades de espaciado: Define unidades de espaciado para márgenes, paddings, etc.*/
+            --spacing__unit: 1rem; /* Unidad base de espaciado (recomendado: rem) */
+            --spacing__small: var(--spacing__unit) / 2; /* Espaciado pequeño (la mitad de la unidad base) */
+            --spacing__medium: 15px; /* Espaciado mediano (la unidad base) */
+            --spacing__large: 20px; /* Espaciado grande (el doble de la unidad base) */
+        /*Tamaños de componentes: Define los tamaños estándar para componentes comunes, como 
+            botones, formularios, tarjetas, etc.*/
+            /* Tamaños de botones */
+                --button__size__small: 20px; /* Tamaño de botón pequeño */
+                --button__size__medium: 30px; /* Tamaño de botón mediano */
+                --button__size__large: 40px; /* Tamaño de botón grande */
+            /* Estilos de botones */
+            .button {
+                padding: var(--spacing__medium) var(--spacing__large);
+                font-size: var(--fontsize__parrafo);
+                border: 1px solid #ccc;
+                cursor: pointer;
+            }
+            .button--small {
+                width: var(--button__size__small);
+                height: var(--button__size__small);
+            }
+            .button--medium {
+                width: var(--button__size__medium);
+                height: var(--button__size__medium);
+            }
+            .button--large {
+                width: var(--button__size__large);
+                height: var(--button__size__large);
+            }
+    /*Otras variables:*/
+        /*Tipografías: Define las tipografías que utilizarás en tu diseño, como la fuente 
+            principal, la fuente secundaria, etc.*/
+        /*Tipografías:*/
+            --font__family__principal: "Arial", sans-serif; /* Fuente principal sans-serif legible */
+            --font__family__secundaria: "Roboto", sans-serif; /* Fuente secundaria sans-serif moderna */
+            --font__size__base: 16px; /* Tamaño de fuente base para el cuerpo del texto */
+            --font__weight__normal: 400; /* Peso de fuente normal para texto normal */
+            --font__weight__bold: 700; /* Peso de fuente en negrita para énfasis */
+            --line-height: 1.6; /* Altura de línea para una mejor legibilidad */
+        
+        /*Sombras: Define las sombras predeterminadas para elementos como botones, tarjetas, 
+            etc.*/            
+        /*Sombras:*/            
+            --shadow__color: #000; /* Color de sombra predeterminado (negro) */
+            --shadow__offset-x: 2px; /* Desplazamiento horizontal de la sombra */
+                                     /*Esta variable representa el desplazamiento vertical de la sombra. Define la distancia a la que la sombra parece estar desplazada hacia abajo (valor positivo) o hacia arriba (valor negativo) en relación con el recuadro de borde del elemento.*/
+            --shadow__offset-y: 2px; /* Desplazamiento vertical de la sombra */
+            --shadow__blur: 5px; /* Difuminación de la sombra */
+                                 /*Esta variable representa el radio de difuminación de la sombra. Un valor más alto crea una sombra más difusa y suave, mientras que un valor más bajo crea una sombra más nítida y definida.*/
+            --shadow__spread: 0px; /* Extensión de la sombra */
+                                   /*Esta variable representa el radio de expansión de la sombra. Un valor positivo hace que la sombra se expanda hacia afuera desde su tamaño original, mientras que un valor negativo crea un efecto de sombra interior.*/
+            --shadow__color:rgba(0, 0, 0, 0.1);/*Esta variable representa el color de la sombra. Puede ser cualquier valor de color CSS válido, como #ff0000 (rojo), rgba(0, 0, 255, 0.5) (azul con 50% de transparencia) o una palabra clave como black.*/
+    
+    /*ejemplo de uso
+            .boton {
+                background-color: var(--color__boton_medium);
+                color: var(--color__boton_medium);
+                padding: 10px 20px;
+                font-family: var(--font__family__principal);
+                font-size: var(--font__size__base);
+                font-weight: var(--font__weight__normal);
+                border: var(--border__width) var(--border__style) var(--border__color);
+                border-radius: var(--border__radius3);
+                box-shadow: var(--shadow__offset-x) var(--shadow__offset-y) var(--shadow__blur) var(--shadow__spread) var(--shadow__color);
+            }
+                .titulo {
+                font-family: var(--font__family__secundaria);
+                font-size: 24px;
+                font-weight: var(--font__weight__bold);
+                color: #333;
+                margin-bottom: 20px;
+            }*/
+    
+    
+
+    --ancho__contenido:50%; /*Ejemplo:
+                            /*  .contenido {
+                            /*      width: var(--ancho-contenido); /* Asignar el valor de la variable al ancho 
+                            /*                                     /* del elemento */
+                            /*}*/
+    --alto__boton: 20px;    /*Ejemplo:
+                            /*.boton {
+                            /*  height: var(--alto-boton); /* Asignar el valor de la variable a 
+                            /*                             /* la altura del elemento */
+                            /*}
+
+    --mitad-ancho: calc(50% / 2); /* La mitad del ancho de la ventana en porcentaje */
+    --margen-lateral: calc(10px / 2); /* La mitad del margen lateral en píxeles */
+    --tarjeta__ancho:325px;
+    
+      
+}
+/*clases de los tipos de letra*/
+    /*Cursivas*/
+        /* Dancing_Script
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 400 to 700*/
+                .dancing-script {
+                    font-family: "Dancing Script", cursive;
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                }
+        /* Open_Sans */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 300 to 800*/
+                .open-sans {
+                    font-family: "Open Sans", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                    font-variation-settings:"wdth" 100;
+                }
+        /* Playwrite_AU_VIC */
+            /* <uniquifier>: Use a unique and descriptive class name */
+            /* <weight>: Use a value from 100 to 400*/
+                .playwrite-au-vic {
+                    font-family: "Playwrite AU VIC", cursive;
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                }
+        /* Playwrite_ES */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 400*/
+                .playwrite-es {
+                    font-family: "Playwrite ES", cursive;
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                }
+        /* Playwrite_ES_Deco */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 400*/
+                .playwrite-es-deco {
+                    font-family: "Playwrite ES Deco", cursive;
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                }
+        /* Playwrite_FR_Trad */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 400*/
+                .playwrite-fr-trad {
+                    font-family: "Playwrite FR Trad", cursive;
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                }
+        /* Playwrite_MX */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 400*/
+                .playwrite-mx {
+                    font-family: "Playwrite MX", cursive;
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                }
+        /* Playwrite_NG_Modern */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 400*/
+                .playwrite-ng-modern {
+                    font-family: "Playwrite NG Modern", cursive;
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                }
+        /* Playwrite_NZ */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 400*/
+                .playwrite-nz {
+                    font-family: "Playwrite NZ", cursive;
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                }
+        /* Playwrite_PL */
+            /* <uniquifier>: Use a unique and descriptive class name */
+            /* <weight>: Use a value from 100 to 400*/
+                .playwrite-pl {
+                    font-family: "Playwrite PL", cursive;
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                }
+        /* Playwrite_PT */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 400*/
+                .playwrite-pt {
+                    font-family: "Playwrite PT", cursive;
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                }
+        /* Playwrite_RO */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 400*/
+            .playwrite-ro {
+                font-family: "Playwrite RO", cursive;
+                font-optical-sizing: auto;
+                font-weight: 100;
+                font-style: normal;
+            }
+        /* Playwrite_SK */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 400*/
+                .playwrite-sk {
+                    font-family: "Playwrite SK", cursive;
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                }
+        /* Playwrite_US_Trad */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 400*/
+                .playwrite-us-trad {
+                    font-family: "Playwrite US Trad", cursive;
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                }
+        /* Playwrite_VN */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 400*/
+                .playwrite-vn {
+                    font-family: "Playwrite VN", cursive;
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                }
+            
+    /*de_molde*/
+        /* Comic_Neue */
+            .comic-neue-light {
+                font-family: "Comic Neue", cursive;
+                font-weight: 300;
+                font-style: normal;
+            }
+            .comic-neue-regular {
+                font-family: "Comic Neue", cursive;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .comic-neue-bold {
+                font-family: "Comic Neue", cursive;
+                font-weight: 700;
+                font-style: normal;
+            }
+            .comic-neue-light-italic {
+                font-family: "Comic Neue", cursive;
+                font-weight: 300;
+                font-style: italic;
+            }
+            .comic-neue-regular-italic {
+                font-family: "Comic Neue", cursive;
+                font-weight: 400;
+                font-style: italic;
+            }
+            .comic-neue-bold-italic {
+                font-family: "Comic Neue", cursive;
+                font-weight: 700;
+                font-style: italic;
+            }
+        /* Dosis */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 200 to 800*/
+                .dosis {
+                    font-family: "Dosis", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 200;
+                    font-style: normal;
+                }
+        /* EB_Garamond */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 400 to 800*/
+                .eb-garamond {
+                    font-family: "EB Garamond", serif;
+                    font-optical-sizing: auto;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+        /* Fira_Sans_Condensed */
+            .fira-sans-condensed-thin {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+            .fira-sans-condensed-extralight {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 200;
+                font-style: normal;
+            }
+            .fira-sans-condensed-light {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 300;
+                font-style: normal;
+            }
+            .fira-sans-condensed-regular {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .fira-sans-condensed-medium {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+            }
+            .fira-sans-condensed-semibold {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+            }
+            .fira-sans-condensed-bold {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+            .fira-sans-condensed-extrabold {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 800;
+                font-style: normal;
+            }
+            .fira-sans-condensed-black {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 900;
+                font-style: normal;
+            }
+            .fira-sans-condensed-thin-italic {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 100;
+                font-style: italic;
+            }
+            .fira-sans-condensed-extralight-italic {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 200;
+                font-style: italic;
+            }
+            .fira-sans-condensed-light-italic {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 300;
+                font-style: italic;
+            }
+            .fira-sans-condensed-regular-italic {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 400;
+                font-style: italic;
+            }
+            .fira-sans-condensed-medium-italic {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 500;
+                font-style: italic;
+            }
+            .fira-sans-condensed-semibold-italic {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 600;
+                font-style: italic;
+            }
+            .fira-sans-condensed-bold-italic {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 700;
+                font-style: italic;
+            }
+            .fira-sans-condensed-extrabold-italic {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 800;
+                font-style: italic;
+            }
+            .fira-sans-condensed-black-italic {
+                font-family: "Fira Sans Condensed", sans-serif;
+                font-weight: 900;
+                font-style: italic;
+            }
+        /* Gideon_Roman */
+            .gideon-roman-regular {
+                font-family: "Gideon Roman", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+        /* Josefin_Sans */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 700*/
+            .josefin-sans {
+                font-family: "Josefin Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 100;
+                font-style: normal;
+            }
+        /* Karla */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 200 to 800*/
+            .karla {
+                font-family: "Karla", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 200;
+                font-style: normal;
+            }
+        /* Libre_Baskerville */
+            .libre-baskerville-regular {
+                font-family: "Libre Baskerville", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .libre-baskerville-bold {
+                font-family: "Libre Baskerville", serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+            .libre-baskerville-regular-italic {
+                font-family: "Libre Baskerville", serif;
+                font-weight: 400;
+                font-style: italic;
+            }
+        /* Libre_Franklin */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 900*/
+            .libre-franklin {
+                font-family: "Libre Franklin", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 100;
+                font-style: normal;
+            }
+        /* Lora */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 400 to 700*/
+            .lora {
+                font-family: "Lora", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+        /* Luxurious_Roman */
+            .luxurious-roman-regular {
+                font-family: "Luxurious Roman", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+        /* Mukta */
+            .mukta-extralight {
+                font-family: "Mukta", sans-serif;
+                font-weight: 200;
+                font-style: normal;
+            }
+            .mukta-light {
+                font-family: "Mukta", sans-serif;
+                font-weight: 300;
+                font-style: normal;
+            }
+            .mukta-regular {
+                font-family: "Mukta", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .mukta-medium {
+                font-family: "Mukta", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+            }
+            .mukta-semibold {
+                font-family: "Mukta", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+            }
+            .mukta-bold {
+                font-family: "Mukta", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+            .mukta-extrabold {
+                font-family: "Mukta", sans-serif;
+                font-weight: 800;
+                font-style: normal;
+            }
+        /* Mulish */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 200 to 1000*/
+            .mulish{
+                font-family: "Mulish", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 200;
+                font-style: normal;
+            }
+        /* Nanum_Gothic */
+            .nanum-gothic-regular {
+                font-family: "Nanum Gothic", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+        /* Noto_Serif */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 900*/
+            .noto-serif {
+                font-family: "Noto Serif", serif;
+                font-optical-sizing: auto;
+                font-weight: 100;
+                font-style: normal;
+                font-variation-settings:
+                    "wdth" 100;
+            }
+        /* Nunito */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 200 to 1000*/
+            .nunito {
+                font-family: "Nunito", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 200;
+                font-style: normal;
+            }
+        /* Playfair_Display */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 400 to 900*/
+            .playfair-display {
+                font-family: "Playfair Display", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+        /* PT_Serif */
+            .pt-serif-regular {
+                font-family: "PT Serif", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .pt-serif-bold {
+                font-family: "PT Serif", serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+            .pt-serif-regular-italic {
+                font-family: "PT Serif", serif;
+                font-weight: 400;
+                font-style: italic;
+            }
+            .pt-serif-bold-italic {
+                font-family: "PT Serif", serif;
+                font-weight: 700;
+                font-style: italic;
+            }
+        /* Quicksand */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 300 to 700*/
+            .quicksand {
+                font-family: "Quicksand", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 300;
+                font-style: normal;
+            }
+        /* Roboto */
+            .roboto-thin {
+                font-family: "Roboto", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+            .roboto-light {
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+                font-style: normal;
+            }
+            .roboto-regular {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .roboto-medium {
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+            }
+            .roboto-bold {
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+            .roboto-black {
+                font-family: "Roboto", sans-serif;
+                font-weight: 900;
+                font-style: normal;
+            }
+            .roboto-thin-italic {
+                font-family: "Roboto", sans-serif;
+                font-weight: 100;
+                font-style: italic;
+            }
+            .roboto-light-italic {
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+                font-style: italic;
+            }
+            .roboto-regular-italic {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-style: italic;
+            }
+            .roboto-medium-italic {
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-style: italic;
+            }
+            .roboto-bold-italic {
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-style: italic;
+            }
+            .roboto-black-italic {
+                font-family: "Roboto", sans-serif;
+                font-weight: 900;
+                font-style: italic;
+            }
+
+        /* Romanesco */
+            .romanesco-regular {
+                font-family: "Romanesco", cursive;
+                font-weight: 400;
+                font-style: normal;
+            }
+        /* Work_Sans */
+            /* <uniquifier>: Use a unique and descriptive class name*/
+            /* <weight>: Use a value from 100 to 900*/
+            .work-sans {
+                font-family: "Work Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 100;
+                font-style: normal;
+            }
+/*3.Estilos de normalización o reset:
+    •Estos estilos ayudan a establecer una base consistente entre 
+        diferentes navegadores.
+    •Ejemplo: * { box-sizing: border-box; margin: 0; padding: 0; }
+    /* Normalización básica */
+        /* Caja de reseteo de estilo */
+            *{
+                margin: 0; /* Elimina márgenes predeterminados */
+                padding: 0; /* Elimina padding predeterminado */
+                text-decoration: none;
+                list-style: none;
+                box-sizing: border-box; /* Incluye el padding y 
+                            el borde en el ancho del elemento */
+            }
+/*4.Estilos globales:•Estos estilos se aplican a elementos HTML genéricos, como body, h1, p, etc.
+    •Ejemplo: 
+            body {
+                font-family: 'Arial', sans-serif; 
+                font-size: 16px; 
+                color: #333; 
+            }
+    /* Tipografía global */
+        /* Normalización de elementos específicos */
+            body {
+                font-family: var(--font__family__principal); /* Fuente principal sans-serif legible */
+                font-size: var(--fontsize__base); /* Tamaño de fuente base para el cuerpo del texto */
+                line-height: 1.6; /* Altura de línea para una mejor legibilidad */
+                color: var(--color__textoParrafo); /* Color de texto general */
+            }
+            h1 {
+                font-size: 2em; /* Tamaño de fuente para encabezados H1 */
+                margin: 0.67em 0; /* Margen superior e inferior para H1 */
+              }
+            h2 {
+                font-size: 1.5em; /* Tamaño de fuente para encabezados H2 */
+                margin: 0.5em 0; /* Margen superior e inferior para H2 */
+            }
+            p {
+                margin: 0.8em 0; /* Margen superior e inferior para párrafos */
+            }
+            /*Listas no ordenadas y ordenadas*/
+                ul, ol {
+                    list-style: none;
+                    padding: 0;
+                }
+            /*Cada uno de los elemenos dentro de la lista*/
+                li {
+                    margin: 0.5em 0;
+                }
+    /* Enlaces */
+        a {
+            text-decoration: none; /* Elimina la decoración predeterminada de los enlaces */
+            color: var(--color__enlaces); /* Color azul para enlaces */
+            transition: color 0.3s ease; /* Animación de cambio de color al pasar el cursor */
+        }
+        a:hover {
+            color: var(--color__enlacesHover); /* Color azul más oscuro al pasar el cursor */
+        }
+    /* Imágenes */
+        img {
+            max-width: 100%; /* Ancho máximo de las imágenes */
+            height: auto; /* Altura automática de las imágenes */
+        }
+/*5.Estilos de componentes:•Estos estilos se aplican a elementos específicos de la interfaz de 
+usuario, como botones, tarjetas, formularios, etc.•
+Ejemplo: .
+btn { 
+    padding: 8px 16px;    
+    background-color: var(--color-primary); 
+    color: #fff;
+    border-radius: 4px; }.
+
+    /* Estilos base para botones */
+        .btn {
+            padding: 8px 16px;
+            background-color: var(--color__boton_medium); /* Color de fondo del botón, usando una variable CSS */
+            color: var(--color__textoBoton_medium); /* Color del texto del botón */
+            border: none; /* Elimina el borde predeterminado */
+            border-radius: 4px; /* Redondea las esquinas del botón */
+            cursor: pointer; /* Indica que el elemento es interactivo */
+            transition: background-color 0.3s ease; /* Animación de cambio de color al pasar el cursor */
+          }
+  
+    /* Estilo al pasar el cursor sobre el botón */
+        .btn:hover {
+            background-color: var(--color__boton_hover2); /* Color de fondo más oscuro al pasar el cursor */
+        }
+    /* Estilo para un botón deshabilitado */
+        .btn.disabled {
+            opacity: 0.5; /* Reduce la opacidad para indicar que el botón está deshabilitado */
+            cursor: default; /* Cambia el cursor a un indicador de no interacción */
+        }
+/*Tarjetas*/
+    /*Estilo de tarjetas*/
+        .contenedor__tarjetas {
+            display: flex;
+            justify-content: center;
+            background-color: var(--color__contenedorNivel1);
+            flex-wrap: wrap; /*indica que cuando no se noten las tarjetas, estas tarjetas se van a posicionar en forma vertical*/
+            gap: var(--spacing__medium); /*tiene que ver con el espacio entre tarjetas para que no se peguen*/
+            margin-top: var(--spacing__large); /* Use the 'spacing__large' variable for top margin */
+            margin-bottom: var(--spacing__large); /* Use the 'spacing__large' variable for bottom margin */
+        }
+        .tarjeta {
+            width: var(--tarjeta__ancho);  /* Ancho de la tarjeta */
+            background-color: var(--color__contenedorNivel2); /* Color de fondo de la tarjeta */
+            border-radius: var(--border__radius2); /* Redondea las esquinas de la tarjeta */
+            box-shadow: var(--shadow__offset-x) var(--shadow__offset-y) var(--shadow__blur) var(--shadow__spread) var(--shadow__color);/* Sombra para dar profundidad */
+            /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+            overflow: hidden;
+            transition: transform 0.5s ease-in-out;
+            margin: 20px; /* Margen alrededor de la tarjeta */
+            padding: 20px; /* Relleno dentro de la tarjeta */
+        }
+        .tarjeta-header {
+            background-color: var(--color__contenedorNivel1); /* Color de fondo del encabezado de la tarjeta */
+            padding: 15px; /* Relleno en el encabezado */
+        } 
+        .tarjeta-title {
+            font-size: var(--fontsize__titulo3); /* Tamaño de fuente del título de la tarjeta */
+            font-weight: var(--font__weight__bold); /* Peso de fuente para el título */
+        } 
+        .tarjeta-body {
+            padding: 15px; /* Espacio interno alrededor del contenido */
+        }  
+        .tarjeta-text {
+            font-size: var(--fontsize__parrafo); /* Tamaño de fuente para el texto general */
+            line-height: 1.5; /* Altura de línea para una mejor legibilidad */
+            color: var(--color__textoParrafo); /* Color de texto general */
+        }
+        .tarjeta-image {
+            max-width: 100%; /* Ancho máximo de las imágenes */
+            height: auto; /* Altura automática para mantener la proporción */
+            margin-bottom: var(--spacing__medium); /* Margen inferior después de las imágenes */
+        }  
+        .tarjeta img{
+            width: 100%;
+            height: 350px;
+            object-fit: cover;   
+        }
+        .tarjeta-link {
+            color: var(--color__enlaces); /* Color de los enlaces */
+            text-decoration: none; /* Elimina la decoración predeterminada */
+            transition: color 0.3s ease; /* Animación de cambio de color al pasar el cursor */
+        }
+        .tarjeta-link:hover {
+            color: var(--color__enlaces__hover); /* Color más oscuro al pasar el cursor */
+        }
+        .form {
+            width: var(--ancho__formulario); /* Ancho del formulario (definido en :root) */
+            margin: var(--spacing__medium) auto; /* Margen y centrado automático (usa la variable de espaciado) */
+            padding: var(--spacing__medium); /* Relleno dentro del formulario (usa la variable de espaciado) */
+            background-color: var(--color__fondo1); /* Color de fondo del formulario (color primario claro) */
+            border-radius: var(--border__radius3); /* Redondea las esquinas del formulario (radio de borde definido en :root) */
+            box-shadow: var(--shadow__offset-x) var(--shadow__offset-y) var(--shadow__blur) var(--shadow__spread) var(--shadow__color); /* Añade una sombra sutil (personalizable en :root) */
+        }
+        .form-group {
+            margin-bottom: 15px; /* Margen inferior entre grupos de campos */
+        }
+        .form-label {
+            display: block; /* Ocupa todo el ancho */
+            margin-bottom: 5px; /* Margen inferior antes del campo de entrada */
+            font-weight: bold; /* Peso de fuente para las etiquetas */
+        }
+        .form-input {
+            width: 100%; /* Ancho completo del campo de entrada */
+            padding: var(--spacing__medium) var(--spacing__small); /* Relleno dentro del campo de entrada (usa variables de espaciado) */
+            border: var(--border__width) var(--border__style) var(--color__border); /* Borde del campo de entrada (personalizable) */
+            border-radius: var(--border__radius3); /* Redondea las esquinas del campo (radio de borde definido en :root) */
+            box-shadow: inset 0 0 0 2px var(--color__input__focus); /* Añade un borde interno al enfocar (personalizable) */
+            transition: border 0.3s ease; /* Animación de cambio de borde al enfocar */
+        }  
+        .form-input:focus {
+            border-color: var(--color__input__focus); /* Color del borde al enfocar (personalizable) */
+        }
+    /* Estilos para campos de entrada específicos */
+        .form-input[type="text"],
+        .form-input[type="email"],
+        .form-input[type="password"] {
+            /* Estilos comunes para campos de texto, email y password */
+            background-color: var(--color__input__background); /* Color de fondo del campo (personalizable) */
+            /* ... (resto de los estilos del .form-input) 
+             font-size, 
+             font-family, 
+             line-height, 
+             text-align, 
+             margin, 
+             padding, 
+             border*/
+        }
+        .form-select {
+            /* Estilos para el selector de opciones */
+            width: 100%;
+            padding: var(--spacing__medium) var(--spacing__small); /* Relleno dentro del campo de entrada (usa variables de espaciado) */
+            border: var(--border__width) var(--border__style) var(--color__border); /* Borde del campo de entrada (personalizable) */
+            border-radius: var(--border__radius3); /* Redondea las esquinas del campo (radio de borde definido en :root) */
+            appearance: none; /* Ocultar el selector nativo del navegador */
+            background-image: url('adta:image/svg+xml;base64,U3VGRT0+Ig=='); /* Flecha indicativa al final */
+            background-repeat: no-repeat, repeat; /* Repetir la flecha en IE11 */
+            background-position: right calc(var(--spacing__small) + 1px) center; /* Posicionar la flecha (usa variable de espaciado) */
+            background-size: 8px 10px; /* Tamaño de la flecha */
+        }
+        .form-select:focus {
+            /* Estilo para el selector cuando está enfocado */
+            border-color: var(--color__input__focus); /* Color del borde al enfocar (personalizable) */
+            outline: none; /* Eliminar el contorno predeterminado */
+            box-shadow: 0 0 0 2px var(--color__input__focus); /* Añadir un borde interno al enfocar (personalizable) */
+        }
+    /* Estilos para el botón de envío */
+        .form-button {
+            background-color: var(--color__button__primary); /* Color de fondo del botón (personalizable) */
+            color: var(--color__button__text); /* Color del texto del botón (personalizable) */
+            padding: var(--spacing__medium) var(--spacing__large); /* Relleno dentro del botón (usa variables de espaciado) */
+            border: none; /* Eliminar el borde por defecto */
+            border-radius: var(--border__radius3); /* Redondea las esquinas del botón (radio de borde definido en :root) */
+            cursor: pointer; /* Indicar que el elemento es interactivo */
+            transition: background-color 0.3s ease; /* Animación de cambio de color al pasar el cursor */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añadir una sombra sutil */
+        }
+        .form-button:hover {
+            background-color: var(--color__button__primary__hover); /* Color de fondo al pasar el cursor (personalizable) */
+        }
+    /* Estilos para mensajes de error (opcional) */
+        .error-message {
+            color: var(--color__error); /* Color para mensajes de error (personalizable) */
+            font-size: var(--font-size__small); /* Tamaño de fuente más pequeño (usa variable de tamaño de fuente) */
+            margin-bottom: var(--spacing__medium); /* Margen inferior para separar del campo (usa variable de espaciado) */
+        }
+/*6.Estilos de diseño:•Estos estilos definen la disposición y estructura de los elementos en la 
+página, como el uso de flexbox, grid, etc.
+    •Ejemplo: .
+    row { 
+    display: flex; 
+    flex-wrap: wrap; }*/
+    nav {
+        background: var(--color__nav);
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+    }  
+    label.logo {
+        /*font-family: "Gwendolyn", cursive;
+        font-weight: 600;
+        font-style: normal;
+        color: var(--color__blanco);
+        font-size: 25px;
+        */
+        line-height: 100px;
+        padding: 30px 30px;
+        background: linear-gradient(to bottom, var(--color__gradientTopRed), var(--color__gradientBottomRed_a));
+        /*
+            background: linear-gradient(to bottom, var(--color__gradientTopRed), var(--color__gradientBottomRed_a));
+            background: linear-gradient(to bottom, var(--color__gradientTopRed), var(--color__gradientBottomRed_b));
+            background: linear-gradient(to bottom, var(--color__gradientTopRed), var(--color__gradientBottomRed_c));
+
+            background: linear-gradient(to bottom, var(--color__gradientTopPink), var(--color__gradientBottomPink_a));
+            background: linear-gradient(to bottom, var(--color__gradientTopPink), var(--color__gradientBottomPink_b));
+            background: linear-gradient(to bottom, var(--color__gradientTopPink), var(--color__gradientBottomPink_c));
+            
+            background: linear-gradient(to bottom, var(--color__gradientTopDarkGreen, var(--color__gradientBottomDarkGreen_a));
+            background: linear-gradient(to bottom, var(--color__gradientTopDarkGreen, var(--color__gradientBottomDarkGreen_b));
+            background: linear-gradient(to bottom, var(--color__gradientTopDarkGreen, var(--color__gradientBottomDarkGreen_c));
+                
+            background: linear-gradient(to bottom, var(--color__gradientTopOrange, var(--color__gradientBottomOrange_a));
+            background: linear-gradient(to bottom, var(--color__gradientTopOrange, var(--color__gradientBottomOrange_b));
+            background: linear-gradient(to bottom, var(--color__gradientTopOrange, var(--color__gradientBottomOrange_c));
+                
+            background: linear-gradient(to bottom, var(--color__gradientTopDarkOrange, var(--color__gradientBottomDarkOrange_a));
+            background: linear-gradient(to bottom, var(--color__gradientTopDarkOrange, var(--color__gradientBottomDarkOrange_b));
+
+            background: linear-gradient(to bottom, var(--color__gradientTopDarkBlue, var(--color__gradientBottom));
+        */
+        background-size: cover;
+        height: 65vh;
+        width: 100%;
+    }
+    nav ul {
+        float: right;
+        margin-right: 40px;
+    } 
+    nav ul li {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+        display: inline-block;
+        line-height: 100px; /* (same as nav height) */
+        margin: 0 7px;
+    }
+    nav ul li a {
+        color: var(--color__nav-list-item-link);
+        font-size: 17px;
+    }
+    nav ul li a:hover {
+        background-color: var(--color__nav-list-item-hover);
+    }
+    nav:hover {
+        background-color: var(--color__nav-hover);
+    }
+    .checkbtn {
+        font-size: 30px;
+        color: var(--color__blanco); /* Using the defined variable for text color */
+        float: right;
+        line-height: 100px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }  
+    #check {
+        display: none;
+    }
+    /* Carousel Styles */
+    .carousel-inner img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    /* sección de imágen Inicial y bienvenida */
+        .portada {
+            background: linear-gradient(to bottom, var(--color__gradientTopRed), var(--color__gradientBottomRed_a)), url("../img/Palacio01.jpg");
+            /*
+            background: linear-gradient(to bottom, var(--color__gradientTopRed), var(--color__gradientBottomRed_a));
+            background: linear-gradient(to bottom, var(--color__gradientTopRed), var(--color__gradientBottomRed_b));
+            background: linear-gradient(to bottom, var(--color__gradientTopRed), var(--color__gradientBottomRed_c));
+            
+            background: linear-gradient(to bottom, var(--color__gradientTopPink), var(--color__gradientBottomPink_a));
+            background: linear-gradient(to bottom, var(--color__gradientTopPink), var(--color__gradientBottomPink_b));
+            background: linear-gradient(to bottom, var(--color__gradientTopPink), var(--color__gradientBottomPink_c));
+            
+            background: linear-gradient(to bottom, var(--color__gradientTopDarkGreen, var(--color__gradientBottomDarkGreen_a));
+            background: linear-gradient(to bottom, var(--color__gradientTopDarkGreen, var(--color__gradientBottomDarkGreen_b));
+            background: linear-gradient(to bottom, var(--color__gradientTopDarkGreen, var(--color__gradientBottomDarkGreen_c));
+                
+            background: linear-gradient(to bottom, var(--color__gradientTopOrange, var(--color__gradientBottomOrange_a));
+            background: linear-gradient(to bottom, var(--color__gradientTopOrange, var(--color__gradientBottomOrange_b));
+            background: linear-gradient(to bottom, var(--color__gradientTopOrange, var(--color__gradientBottomOrange_c));
+                
+            background: linear-gradient(to bottom, var(--color__gradientTopDarkOrange, var(--color__gradientBottomDarkOrange_a));
+            background: linear-gradient(to bottom, var(--color__gradientTopDarkOrange, var(--color__gradientBottomDarkOrange_b));
+
+            background: linear-gradient(to bottom, var(--color__gradientTopDarkBlue, var(--color__gradientBottom));
+        */
+            background-size: cover;
+            height: 65vh;
+            width: 100%;
+            text-align: center;
+            border: 5px solid var(--color__fondo1); /* Use the defined variable for border color */
+            border-radius: 25px 0px 25px 25px;
+        }
+    /* Contenedor Nivel 1 */
+        .contenedor-nivel-1 {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--spacing__medium);
+            border: var(--border__width) var(--border__style) var(--color__border);
+            background-color: var(--color__contenedorNivel1); /* Utilizar la variable específica para el contenedor Nivel 1 */
+        }
+    /* Contenedor Nivel 2 */
+        .contenedor-nivel-2 {
+            width: 90%;
+            margin: var(--spacing__medium) auto;
+            padding: var(--spacing__small);
+            border: var(--border__width) var(--border__style) var(--color__border);
+            background-color: var(--color__contenedorNivel2); /* Utilizar la variable específica para el contenedor Nivel 2 */
+        }
+    /* Contenedor Nivel 3 */
+    .contenedor-nivel-3 {
+        width: 80%;
+        margin: var(--spacing__small) auto;
+        padding: 10px;
+        border: var(--border__width) var(--border__style) var(--color__border);
+        background-color: var(--color__contenedorNivel3); /* Utilizar la variable específica para el contenedor Nivel 3 */
+    }
+    /* Contenido Principal */
+        .contenedor {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        
+        .contenido__principal {
+            width: var(--ancho__contenido); /* Use the 'ancho__contenido' variable for width */
+            margin: 3% auto;
+        }
+        
+        .texto__caja {
+            font-family: var(--font__family__principal); /* Use the 'font__family__principal' variable for font family */
+            font-optical-sizing: auto;
+            font-style: normal;
+        
+            color: var(--color__textoParrafo); /* Use the 'color__textoParrafo' variable for text color */
+            font-size: var(--fontsize__parrafo); /* Use the 'fontsize__parrafo' variable for font size */
+            justify-content: center;
+        }
+        
+        .contenido__principal img {
+            max-width: 100%;
+            border-radius: var(--border__radius1); /* Use the 'border__radius' variable for border radius */
+            float: left;
+            margin-right: var(--spacing__medium); /* Use the 'spacing__medium' variable for margin-right */
+            margin-bottom: var(--spacing__large); /* Use the 'spacing__large' variable for margin-bottom */
+        }
+  
+  
+
+/*7.Estilos de utilidad:•Estos son estilos reutilizables que se pueden aplicar a múltiples 
+elementos, como clases de texto, márgenes, rellenos, etc.
+    •Ejemplo: .
+    text-center { 
+    text-align: center; }
+    /*carrusel Bootstrap*/ 
+        .carousel-inner img{
+            /*top: 100px;*/
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+    
+/*8.Estilos de temas o modo oscuro:•Estos estilos permiten cambiar el aspecto visual de la 
+aplicación, como colores, tipografía, etc.
+•Ejemplo: .
+
+dark-mode{ 
+   --color-primary: #6c757d; 
+   --color-text: #f8f9fa; }
+
+/*9.Comentarios y documentación:•Estos ayudan a describir y organizar el código CSS para 
+facilitar su mantenimiento y comprensión.
+•Ejemplo:
+ /* Estilos de la tarjeta de producto */
+
